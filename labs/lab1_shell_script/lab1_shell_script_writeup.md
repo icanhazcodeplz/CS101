@@ -18,6 +18,7 @@ In completing this exercise, you will practice using:
 - `head` - Print a specific number of lines of the top of a file
 - `rm` - Remove files or a directory
 - Creating an environment variable
+- Accessing an environment variable using `$<var_name>`
 
 ---
 
@@ -48,22 +49,20 @@ My home directory is `/Users/brent`. My script prints the following
 /Users/brent
 /Users/brent
 /Users/brent/test_folder
-.                .hidden_file.txt file2.txt
-..               file1.txt
+.                       ..                      .hidden_file.txt        file1.txt               file2.txt
 Hello, World!
 The weather is nice today
 The weather is nice today
 The weather is nice today
 Hello, World!
 The weather is nice today
-file1.txt        file1_backup.txt file2.txt
+file1.txt               file1_backup.txt        file2.txt
 file1_backup.txt
-backups    file1.txt  file2.txt
-backups    file2.txt
-file2.txt
+backups         file1.txt       file2.txt
+backups         file2.txt
 file2.txt
 CS101_Student
-./shell_basics.sh: line 83: cd: test_folder: No such file or directory
+./shell_basics_stub.sh: line 86: cd: test_folder: No such file or directory
 ```
 ---
 
