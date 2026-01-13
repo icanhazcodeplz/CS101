@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# 1. Print your current directory to console
-
+# 1. Print your current directory to console (done for you as an example)
+pwd
 # 2. Create a new directory called 'test_folder'
 
 # 3. Navigate into 'test_folder'
