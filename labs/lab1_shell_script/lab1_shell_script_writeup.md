@@ -43,26 +43,25 @@ In completing this exercise, you will practice using:
 
 ## Example Output
 
-My home directory is `/Users/brent`. My script prints the following
+I did this assignment in my Codespaces terminal. My script prints the following
 
 ```
-/Users/brent
-/Users/brent
-/Users/brent/test_folder
-.                       ..                      .hidden_file.txt        file1.txt               file2.txt
+/workspaces/67756774/shell_assignment
+/workspaces/67756774/shell_assignment/test_folder
+.  ..  file1.txt  file2.txt  .hidden_file.txt
 Hello, World!
 The weather is nice today
 The weather is nice today
 The weather is nice today
 Hello, World!
 The weather is nice today
-file1.txt               file1_backup.txt        file2.txt
+file1_backup.txt  file1.txt  file2.txt
 file1_backup.txt
-backups         file1.txt       file2.txt
-backups         file2.txt
+backups  file1.txt  file2.txt
+backups  file2.txt
 file2.txt
 CS101_Student
-./shell_basics_stub.sh: line 86: cd: test_folder: No such file or directory
+./shell_basics.sh: line 56: cd: test_folder: No such file or directory
 ```
 ---
 
