@@ -5,6 +5,7 @@ Course Content and Resources for CS101, sponsored by [Heights Philadelphia](http
 ## Topic 1: Command Line (CLI)
 The command line (also called the terminal, shell, or console) is a text-based interface for interacting with your computer. Instead of clicking icons and menus, you type commands to navigate files, run programs, install software, and perform system tasks.
 
+Reference Cheatsheets (list of commands):  [One Pager](https://www.git-tower.com/blog/media/pages/posts/command-line-cheat-sheet/64337e6bae-1765195492/command-line-cheat-sheet-large01.avif) and/or [One With Descriptions](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce)
 #### Tips:
  - Be ***very careful*** with the `rm` command. There is no way to undo! It is easy to accidently delete important files forever.
  - If you get stuck in a weird interface, try:
@@ -14,12 +15,10 @@ The command line (also called the terminal, shell, or console) is a text-based i
      - (last resort) Close window and start over
 
 #### Resources:
- - Cheatsheet (list of commands) 
-   - [One Page](https://www.git-tower.com/blog/media/pages/posts/command-line-cheat-sheet/64337e6bae-1765195492/command-line-cheat-sheet-large01.avif)
-   - [With Descriptions](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce)
  - Tutorials
-   - [Codecademy: Intro to the Command Line](https://www.codecademy.com/learn/intro-to-the-command-line) (free)
-   - [Codecademy: Learn the Command Line: Viewing and Changing the File System](https://www.codecademy.com/learn/learn-the-command-line-viewing-and-changing-the-file-system) (free)
+   - **Codecademy**:
+     - [Codecademy: Intro to the Command Line](https://www.codecademy.com/learn/intro-to-the-command-line) (free)
+     - [Codecademy: Learn the Command Line: Viewing and Changing the File System](https://www.codecademy.com/learn/learn-the-command-line-viewing-and-changing-the-file-system) (free)
    - [SW Carpentry](https://swcarpentry.github.io/shell-novice/index.html)
    - [Ubuntu Tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
  - Videos
