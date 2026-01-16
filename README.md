@@ -10,7 +10,7 @@ Reference Cheatsheets (list of commands):  [One Pager](https://www.git-tower.com
  - Be ***very careful*** with the `rm` command. There is no way to undo! It is easy to accidently delete important files forever.
  - If you get stuck in a weird interface, try:
      - Hit `Enter` a few times 
-     - Hit `CTRL` - `c`
+     - Hit `CTRL` - `c` or `CTRL` - `d`
      - Hit `q`
      - (last resort) Close window and start over
 
