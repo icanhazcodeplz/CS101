@@ -36,6 +36,7 @@ WIP
 
 ### Touch Typing
  - [typing.com](https://www.typing.com/) : Used for typing tests to calculate extra credit points
+   - Join class with [this link](https://www.typing.com/join#695F2A97C85F2)
  - [KeyBr](https://www.keybr.com/) : Typing practice
  - [TypingClub](https://www.typingclub.com/) : Typing exercises
 

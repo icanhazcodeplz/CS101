@@ -1,0 +1,16 @@
+# Vocabulary
+ - **Hardware**: Physical components of a computer (keyboard, monitor, motherboard, etc.)
+ - **Software**: Programs and instructions that tell hardware what to do
+ - **Hard Drive**: Storage device using spinning magnetic disks to store data permanently
+ - **Solid State Drive (SSD)**: Storage device using flash memory chips; faster and more durable than hard drives
+ - **Motherboard**: Main circuit board that connects all computer components together
+ - **Central Processing Unit (CPU)**: The "brain" of the computer that executes instructions and performs calculations
+ - **Clock Speed**:
+ - **CPU Cores**:
+ - **Random Access Memory (RAM)**: Fast, temporary memory that stores data for running programs; cleared when powered off
+ - **GPU (Graphics Processing Unit)**: Specialized processor for rendering graphics and parallel computations
+ - **Power Supply Unit (PSU)**: 
+ - **I/O**: Common shorthand for "Input/Output".
+   - **input**: Data or instructions entered into a computer (keyboard, mouse, files).
+   - **output**: Results produced by a computer (display, printed documents, files).
+ - **Operating System (OS)**: Software that manages hardware and provides services for programs (Windows, macOS, Linux, Chromebook, Android, etc)
