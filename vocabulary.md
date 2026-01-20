@@ -5,12 +5,22 @@
  - **Solid State Drive (SSD)**: Storage device using flash memory chips; faster and more durable than hard drives
  - **Motherboard**: Main circuit board that connects all computer components together
  - **Central Processing Unit (CPU)**: The "brain" of the computer that executes instructions and performs calculations
- - **Clock Speed**:
- - **CPU Cores**:
+ - **Clock Speed**: How fast a CPU executes instructions, measured in GHz (billions of cycles per second)
+ - **CPU Cores**: Independent processing units within a CPU; more cores allow more tasks to run simultaneously
  - **Random Access Memory (RAM)**: Fast, temporary memory that stores data for running programs; cleared when powered off
  - **GPU (Graphics Processing Unit)**: Specialized processor for rendering graphics and parallel computations
- - **Power Supply Unit (PSU)**: 
+ - **Power Supply Unit (PSU)**: Converts AC power from the wall outlet to DC power for computer components
  - **I/O**: Common shorthand for "Input/Output".
    - **input**: Data or instructions entered into a computer (keyboard, mouse, files).
    - **output**: Results produced by a computer (display, printed documents, files).
- - **Operating System (OS)**: Software that manages hardware and provides services for programs (Windows, macOS, Linux, Chromebook, Android, etc)
+ - **Parallel vs Serial**: Serial processes tasks one at a time in sequence; parallel processes multiple tasks simultaneously
+ - **Operating System (OS)**: Base software of a computer that manages hardware and software resources, acting as bridge between user and physical machine.
+ - **Application**: Software designed for end-users to perform specific tasks, like browsing the web, writing documents, or playing games.
+ - **Kernel**: Core part of the OS that directly manages hardware, memory, and processes
+ - **Shell**: Interface for users to interact with the OS, either via command line (terminal) or graphical (GUI)
+ - **Terminal**: Text-based interface for typing commands directly to the shell (also called command line or console)
+ - **Graphical User Interface (GUI)**: Visual interface with windows, icons, and menus that users interact with using a mouse/touch
+ - **File System**: Organizational structure to store folders, subfolders, and files.
+ - **Folder/Directory/Dir**: Holds files and/or other folders
+ - **Parent Folder**: The folder one level up that contains the current folder. 
+ - **Child Folder/Subfolder/Subdir**: A folder nested inside another folder
