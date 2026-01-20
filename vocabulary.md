@@ -8,8 +8,7 @@
  - **Clock Speed**: How fast a CPU executes instructions, measured in GHz (billions of cycles per second)
  - **CPU Cores**: Independent processing units within a CPU; more cores allow more tasks to run simultaneously
  - **Random Access Memory (RAM)**: Fast, temporary memory that stores data for running programs; cleared when powered off
- - **GPU (Graphics Processing Unit)**: Specialized processor for rendering graphics and parallel computations
- - **Power Supply Unit (PSU)**: Converts AC power from the wall outlet to DC power for computer components
+ - **Graphics Processing Unit (GPU)**: Specialized processor for rendering graphics and parallel computations
  - **I/O**: Common shorthand for "Input/Output".
    - **input**: Data or instructions entered into a computer (keyboard, mouse, files).
    - **output**: Results produced by a computer (display, printed documents, files).
