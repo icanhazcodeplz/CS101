@@ -15,22 +15,46 @@ Reference Cheatsheets (list of commands):  [One Pager](https://www.git-tower.com
      - (last resort) Close window and start over
 
 #### Resources:
- - Tutorials
+ - **Tutorials**
    - **Codecademy**:
      - [Codecademy: Intro to the Command Line](https://www.codecademy.com/learn/intro-to-the-command-line) (free)
      - [Codecademy: Learn the Command Line: Viewing and Changing the File System](https://www.codecademy.com/learn/learn-the-command-line-viewing-and-changing-the-file-system) (free)
    - [SW Carpentry](https://swcarpentry.github.io/shell-novice/index.html)
    - [Ubuntu Tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
- - Videos
+ - **Videos**
    - [Command Line Crash Course For Beginners](https://www.youtube.com/watch?v=uwAqEzhyjtw) (44min)
 
-## Topic 2: Java Getting Started (HelloWorld)
-WIP (work in progress)
- - [Codecademy: Intro to Java, HelloWorld](https://www.codecademy.com/courses/java-introduction/lessons/hello-world-java/exercises/introduction-to-java) (free)
+## Topic 2: Java Print Statements
+The basic boilerplate for a java class is:
+```java
+public class helloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+The name of the file must match the name of the class. In this case it must be `helloWorld.java`.
+
+#### Resources
+ - **Tutorials**
+   - [Codecademy: Intro to Java, HelloWorld](https://www.codecademy.com/courses/java-introduction/lessons/hello-world-java/exercises/introduction-to-java) (free)
+ - **Videos**
+   - **Alex Lee**
+     - [#2 System.out.println In Java](https://youtu.be/xGAGDp-6IU4?si=7yJSqyq-U9MYm0Kt)
+     - [#3 Comments in Java](https://youtu.be/yxIAXB1wk7w?si=wUcs1t4UYI6wcGsE)
+     - [#4 Escape Sequences In Java](https://youtu.be/LsvVdx2IE4c?si=R1Y9Mb0iu7Ii0tEn)
+     - (project) [#5 Animated ASCII Art Java Code](https://youtu.be/zEIsf-QhHxQ?si=U-jNA7gL68tIqOov)
 
 ## Topic 3: Java Variables
-WIP
- - [Codecademy: Intro to Java, Variables](https://www.codecademy.com/courses/java-introduction/lessons/learn-java-variables/exercises/introduction) (free)
+
+#### Resources
+ - **Tutorials**
+    - [Codecademy: Intro to Java, Variables](https://www.codecademy.com/courses/java-introduction/lessons/learn-java-variables/exercises/introduction) (free)
+ - **Videos**
+    - **Alex Lee**
+        - [#6 Java Strings Tutorial](https://youtu.be/3xuJIaP3C4g?si=evoB0sKIBjzqOKpd)
+        - [#7 Java Int Variables](https://youtu.be/3Bf2Y9NBcck?si=iFF2FxF11KmXusio)
+
 
 ## Other Resources
 
