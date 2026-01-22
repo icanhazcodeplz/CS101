@@ -22,7 +22,7 @@ In completing this exercise, you will practice using:
 
 ---
 
-### Instructions
+## Instructions
 
 1. Open a terminal and navigate to a directory where you want to work.
 1. Create a new file called `shell_basics.sh`.
