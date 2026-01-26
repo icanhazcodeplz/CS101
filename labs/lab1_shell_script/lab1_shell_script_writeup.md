@@ -5,20 +5,17 @@ Made with assistance from claude.ai
 
 In completing this exercise, you will practice using:
 
-- `echo` – Print text to the terminal
-- `pwd` – Print working directory
-- `cd` – Change directory
+- `echo` - Print text to the terminal
+- `pwd` - Print working directory
+- `cd` - Change directory
 - `ls` - List contents of directory
-- `mkdir` – Make directories
-- `touch` – Create empty file(s)
-- `cp` – Copy files
+- `mkdir` - Make directories
+- `touch` - Create empty file(s)
+- `cp` - Copy files
 - `mv` - Move file to another location
-- `>` and `>>` - Output redirection
 - `cat` - Print contents of file
 - `head` - Print a specific number of lines of the top of a file
 - `rm` - Remove files or a directory
-- Creating an environment variable
-- Accessing an environment variable using `$<var_name>`
 
 ---
 
@@ -26,43 +23,23 @@ In completing this exercise, you will practice using:
 
 1. Open a terminal and navigate to a directory where you want to work.
 1. Create a new file called `shell_basics.sh`.
-1. Make `shell_basics.sh` executable by running the command from the terminal 
-    ```bash
-    chmod +x shell_basics.sh
-   ```
 1. Open `shell_basics.sh` in a text editor.
 1. Copy and paste the contents of [shell_basics_stub.sh](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab1_shell_script/shell_basics_stub.sh) into `shell_basics.sh`
-1. Complete all of the items
-1. Run the script by executing this command in the terminal:
-    ```bash
-   ./shell_basics.sh
-    ```
+1. Complete all of the questions
 1. When complete, upload the file and submit on Canvas. You must get ALL steps correct to get credit (no partial credit).
 
----
 
-## Example Output
+**OPTIONAL**:
+   - `shell_basics.sh` has a `.sh`, or "shell" suffix. This means that it can be run as a "shell script", which is a way of automating terminal commands. To make this file executable, run this command from the terminal
+     ```bash
+     chmod +x shell_basics.sh
+     ```
+   - You can now run the script using command
+     ```bash
+     ./shell_basics.sh
+     ```
+   - To learn more about shell scripting, I recommend [this tutorial](https://www.shellscript.sh/first.html).
 
-I did this assignment in my Codespaces terminal. My script prints the following
 
-```
-/workspaces/67756774/shell_assignment
-/workspaces/67756774/shell_assignment/test_folder
-.  ..  file1.txt  file2.txt  .hidden_file.txt
-Hello, World!
-The weather is nice today
-The weather is nice today
-The weather is nice today
-Hello, World!
-The weather is nice today
-file1_backup.txt  file1.txt  file2.txt
-file1_backup.txt
-backups  file1.txt  file2.txt
-backups  file2.txt
-file2.txt
-CS101_Student
-./shell_basics.sh: line 56: cd: test_folder: No such file or directory
-```
----
 
 
