@@ -1,25 +1,28 @@
 # Vocabulary
- - **Hardware**: Physical components of a computer (keyboard, monitor, motherboard, etc.)
- - **Software**: Programs and instructions that tell hardware what to do
- - **Hard Drive**: Storage device using spinning magnetic disks to store data permanently
- - **Solid State Drive (SSD)**: Storage device using flash memory chips; faster and more durable than hard drives
- - **Motherboard**: Main circuit board that connects all computer components together
- - **Central Processing Unit (CPU)**: The "brain" of the computer that executes instructions and performs calculations
- - **Clock Speed**: How fast a CPU executes instructions, measured in GHz (billions of cycles per second)
- - **CPU Cores**: Independent processing units within a CPU; more cores allow more tasks to run simultaneously
- - **Random Access Memory (RAM)**: Fast, temporary memory that stores data for running programs; cleared when powered off
- - **Graphics Processing Unit (GPU)**: Specialized processor for rendering graphics and parallel computations
- - **I/O**: Common shorthand for "Input/Output".
-   - **input**: Data or instructions entered into a computer (keyboard, mouse, files).
-   - **output**: Results produced by a computer (display, printed documents, files).
- - **Parallel vs Serial**: Serial processes tasks one at a time in sequence; parallel processes multiple tasks simultaneously
- - **Operating System (OS)**: Base software of a computer that manages hardware and software resources, acting as bridge between user and physical machine.
- - **Application**: Software designed for end-users to perform specific tasks, like browsing the web, writing documents, or playing games.
- - **Kernel**: Core part of the OS that directly manages hardware, memory, and processes
- - **Shell**: Interface for users to interact with the OS, either via command line (terminal) or graphical (GUI)
- - **Terminal**: Text-based interface for typing commands directly to the shell (also called command line or console)
- - **Graphical User Interface (GUI)**: Visual interface with windows, icons, and menus that users interact with using a mouse/touch
- - **File System**: Organizational structure to store folders, subfolders, and files.
- - **Folder/Directory/Dir**: Holds files and/or other folders
- - **Parent Folder**: The folder one level up that contains the current folder. 
- - **Child Folder/Subfolder/Subdir**: A folder nested inside another folder
+- **Hardware**: Physical components of a computer (keyboard, monitor, motherboard, etc.)
+- **Software**: Programs and instructions that tell hardware what to do
+- **Hard Drive**: Storage device using spinning magnetic disks to store data permanently
+- **Solid State Drive (SSD)**: Storage device using flash memory chips; faster and more durable than hard drives
+- **Motherboard**: Main circuit board that connects all computer components together
+- **Central Processing Unit (CPU)**: The "brain" of the computer that executes instructions and performs calculations
+- **Clock Speed**: How fast a CPU executes instructions, measured in GHz (billions of cycles per second)
+- **CPU Cores**: Independent processing units within a CPU; more cores allow more tasks to run simultaneously
+- **Random Access Memory (RAM)**: Fast, temporary memory that stores data for running programs; cleared when powered off
+- **Graphics Processing Unit (GPU)**: Specialized processor for rendering graphics and parallel computations
+- **I/O**: Common shorthand for "Input/Output".
+    - **input**: Data or instructions entered into a computer (keyboard, mouse, files).
+    - **output**: Results produced by a computer (display, printed documents, files).
+- **Parallel vs Serial**: Serial processes tasks one at a time in sequence; parallel processes multiple tasks simultaneously
+- **Operating System (OS)**: Base software of a computer that manages hardware and software resources, acting as bridge between user and physical machine.
+- **Application**: Software designed for end-users to perform specific tasks, like browsing the web, writing documents, or playing games.
+- **Kernel**: Core part of the OS that directly manages hardware, memory, and processes
+- **Shell**: Interface for users to interact with the OS, either via command line (terminal) or graphical (GUI)
+- **Terminal**: Text-based interface for typing commands directly to the shell (also called command line or console)
+- **Graphical User Interface (GUI)**: Visual interface with windows, icons, and menus that users interact with using a mouse/touch
+- **File System**: Organizational structure to store folders, subfolders, and files.
+- **Folder/Directory/Dir**: Holds files and/or other folders
+- **Parent Folder**: The folder one level up that contains the current folder.
+- **Child Folder/Subfolder/Subdir**: A folder nested inside another folder
+- **ASCII**: A character encoding that represents 128 characters (letters, digits, symbols) using 7 bits
+- **Unicode**: A universal character encoding standard that supports characters from all writing systems worldwide, including emojis; extends beyond ASCII's 128 characters with capacity for over 1 million representations (currently only 160,000 in use).
+- **RGB**: Red, Green, Blue; a color model where colors are created by combining different intensities of red, green, and blue light (each 0-255)

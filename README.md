@@ -54,13 +54,13 @@ The name of the file must match the name of the class. In this case it must be `
     - **Alex Lee**
         - [#6 Java Strings Tutorial](https://youtu.be/3xuJIaP3C4g?si=evoB0sKIBjzqOKpd)
         - [#7 Java Int Variables](https://youtu.be/3Bf2Y9NBcck?si=iFF2FxF11KmXusio)
+        - [#9 Double, Long and Float Java Tutorial](https://youtu.be/qawwQf6gKpQ?si=4hAjAfFLjTJ8ya97)
 
 
 ## Other Resources
 
 ### Touch Typing
  - [typing.com](https://www.typing.com/) : Used for typing tests to calculate extra credit points
-   - Join class with [this link](https://www.typing.com/join#695F2A97C85F2)
  - [KeyBr](https://www.keybr.com/) : Typing practice
  - [TypingClub](https://www.typingclub.com/) : Typing exercises
 
