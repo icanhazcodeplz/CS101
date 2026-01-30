@@ -13,7 +13,7 @@
     - **input**: Data or instructions entered into a computer (keyboard, mouse, files).
     - **output**: Results produced by a computer (display, printed documents, files).
 - **Parallel vs Serial**: Serial processes tasks one at a time in sequence; parallel processes multiple tasks simultaneously
-- **Operating System (OS)**: Base software of a computer that manages hardware and software resources, acting as bridge between user and physical machine.
+- **Operating System (OS)**: Base software of a computer that manages hardware and software resources, acting as a bridge between user and physical machine.
 - **Application**: Software designed for end-users to perform specific tasks, like browsing the web, writing documents, or playing games.
 - **Kernel**: Core part of the OS that directly manages hardware, memory, and processes
 - **Shell**: Interface for users to interact with the OS, either via command line (terminal) or graphical (GUI)
@@ -26,3 +26,8 @@
 - **ASCII**: A character encoding that represents 128 characters (letters, digits, symbols) using 7 bits
 - **Unicode**: A universal character encoding standard that supports characters from all writing systems worldwide, including emojis; extends beyond ASCII's 128 characters with capacity for over 1 million representations (currently only 160,000 in use).
 - **RGB**: Red, Green, Blue; a color model where colors are created by combining different intensities of red, green, and blue light (each 0-255)
+- **Declaration**: Defining a variable's name and type, with or without an initial assignment. e.g. `int x;` or `int x = 5;`
+- **Assignment**: Giving a variable a value, using the assignment operator, the equals sign ("="). e.g. `x = 5;`
+- **Initialization**: The initial assignment of a variable.
+- **Increment**: To increase, usually by 1. e.g. `x = x + 1;` or `x+=1;`
+- **Decrement**: To decrease, usually by 1. e.g. `x = x - 1;` or `x-=1;`
