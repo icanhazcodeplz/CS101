@@ -31,3 +31,6 @@
 - **Initialization**: The initial assignment of a variable.
 - **Increment**: To increase, usually by 1. e.g. `x = x + 1;` or `x+=1;`
 - **Decrement**: To decrease, usually by 1. e.g. `x = x - 1;` or `x-=1;`
+- **Type Casting**: Converting a value from one data type to another. e.g. `(double) 5` converts the int `5` to `5.0`.
+- **Concatenation**: Joining two or more strings together using the `+` operator. e.g. `"Hello, " + name` produces `"Hello, Alice"` if `name` is `"Alice"`.
+- **Parsing**: Analyzing a string and converting it and/or splitting into usable components. e.g. the java compiler parsing `int x = 5` into `type -> int`, `name -> x`, and `value -> 5` , or `Integer.parseInt("123")` parsing the String `"123"` into the int `123`.
