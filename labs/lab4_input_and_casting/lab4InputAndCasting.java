@@ -1,12 +1,12 @@
-import java.util.Scanner;
+// TODO: Import java Scanner
 
 public class lab4InputAndCasting {
     public static void main(String[] args) {
         System.out.println("\nCS101 - Lab4: User Input and Type Casting");
+        System.out.println("\n--- String Input ---");
 
         // 1. Create a Scanner object called "scanner" to read input from the user
 
-        System.out.println("\n--- String Input ---");
 
         // TODO: Uncomment the line below. Notice that we used `print` instead of `println` below so the cursor stays on the same line.
         // System.out.print("What is your name? ");
@@ -67,8 +67,8 @@ public class lab4InputAndCasting {
         // TODO: Uncomment the line below
         // System.out.println("intValue: " + intValue);
 
-        // 9. Create a double variable called "intAsDouble" and set it to intValue cast as a double
-        //     Example: double someDouble = (double) someInt;
+        // 9. Create a double variable called "intAsDouble" and set it to "intValue" cast as a double
+        //     Example: double <someDouble> = (double) <someInt>;
 
 
         // TODO: Uncomment the line below
@@ -80,7 +80,7 @@ public class lab4InputAndCasting {
         // TODO: Uncomment the line below
         // System.out.println("doubleValue: " + doubleValue);
 
-        // 11. Create an int variable called "doubleAsInt" and set it to doubleValue cast as an int
+        // 11. Create an int variable called "doubleAsInt" and set it to "doubleValue" cast as an int
 
 
         // TODO: Uncomment the lines below
@@ -93,7 +93,7 @@ public class lab4InputAndCasting {
         // 12. Create a String variable called "numString" and set it to "123"
 
 
-        // 13. Create an int variable called "parsedInt" and use Integer.parseInt(<some_string>) to convert "numString" to an int
+        // 13. Create an int variable called "parsedInt" and use Integer.parseInt(<someString>) to convert "numString" to an int
 
 
         // TODO: Uncomment the line below
@@ -102,7 +102,7 @@ public class lab4InputAndCasting {
         // 14. Create a String variable called "decimalString" and set it to "3.14"
 
 
-        // 15. Create a double variable called "parsedDouble" and use Double.parseDouble(<some_string>) to convert "decimalString"
+        // 15. Create a double variable called "parsedDouble" and use Double.parseDouble(<someString>) to convert "decimalString"
 
         // TODO: Uncomment the line below
         // System.out.println("String \"" + decimalString + "\" parsed to double: " + parsedDouble);
