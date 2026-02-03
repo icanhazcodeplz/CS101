@@ -93,7 +93,7 @@ public class lab4InputAndCasting {
         // 12. Create a String variable called "numString" and set it to "123"
 
 
-        // 13. Create an int variable called "parsedInt" and use Integer.parseInt(<some_string>) to convert the String to an int
+        // 13. Create an int variable called "parsedInt" and use Integer.parseInt(<some_string>) to convert "numString" to an int
 
 
         // TODO: Uncomment the line below
@@ -102,8 +102,7 @@ public class lab4InputAndCasting {
         // 14. Create a String variable called "decimalString" and set it to "3.14"
 
 
-        // 15. Create a double variable called "parsedDouble" and use Double.parseDouble(<some_string>) to convert it
-        // double parsedDouble = Double.parseDouble(decimalString);
+        // 15. Create a double variable called "parsedDouble" and use Double.parseDouble(<some_string>) to convert "decimalString"
 
         // TODO: Uncomment the line below
         // System.out.println("String \"" + decimalString + "\" parsed to double: " + parsedDouble);
