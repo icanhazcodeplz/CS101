@@ -77,58 +77,73 @@ Each person pays: $33.63
  - 2pts: Program prints the tip amount with correct format, e.g. `$15.39`. Note two decimal places.
  - 2pts: Program prints the total bill with correct format, e.g. `$100.89`. Note two decimal places.
  - 2pts: Program prints the amount each person pays with correct format, e.g. `$33.63`. Note two decimal places.
+ - 15pts: One point awarded for each correct output value (must be exact) for the following test cases:
 
-One point awarded for each correct output value (must be exact) for the following test cases:
-
-Test Case 1 - Basic
- - Input:
-   - Bill: 10.10
-   - Tip: 10
-   - Ppl: 1
- - Output (1pt each):
-   - Tip: $1.01
-   - Total: $11.11
-   - PerPerson: $11.11
-
-Test Case 2 - Add people
- - Input:
-   - Bill: 10.10
-   - Tip: 10
-   - Ppl: 3
- - Output (1pt each):
-   - Tip: $1.01
-   - Total: $11.11
-   - PerPerson: $3.70
-
-Test Case 3 - Bill as integer
- - Input:
-   - Bill: 45 (notice it's an integer)
-   - Tip: 20
-   - Ppl: 4
- - Output (1pt each):
-   - Tip: $9.00
-   - Total: $54.00
-   - PerPerson: $13.50
-
-Test Case 4 - Tip as float
- - Input:
-   - Bill: 120.4
-   - Tip: 15.7
-   - Ppl: 2
- - Output (1pt each):
-   - Tip: $18.90
-   - Total: $139.30
-   - PerPerson: $69.65
-
-Test Case 5 - Zero tip
- - Input:
-   - Bill: 25.00
-   - Tip: 0
-   - Ppl: 2
- - Output (1pt each):
-   - Tip: $0.00
-   - Total: $25.00
-   - PerPerson: $12.50
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Basic</th>
+      <th>Add people</th>
+      <th>Bill as integer</th>
+      <th>Tip as float</th>
+      <th>Zero tip</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3"><strong>Input</strong></td>
+      <td>Bill</td>
+      <td>10.10</td>
+      <td>10.10</td>
+      <td>45</td>
+      <td>120.4</td>
+      <td>25.00</td>
+    </tr>
+    <tr>
+      <td>Tip %</td>
+      <td>10</td>
+      <td>10</td>
+      <td>25</td>
+      <td>15.7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>People</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>Output (1pt each)</strong></td>
+      <td>Tip Amount</td>
+      <td>$1.01</td>
+      <td>$1.01</td>
+      <td>$11.25</td>
+      <td>$18.90</td>
+      <td>$0.00</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>$11.11</td>
+      <td>$11.11</td>
+      <td>$56.25</td>
+      <td>$139.30</td>
+      <td>$25.00</td>
+    </tr>
+    <tr>
+      <td>Per Person</td>
+      <td>$11.11</td>
+      <td>$3.70</td>
+      <td>$14.06</td>
+      <td>$69.65</td>
+      <td>$12.50</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ### Extra Credit
