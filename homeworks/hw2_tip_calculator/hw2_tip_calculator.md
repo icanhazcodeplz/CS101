@@ -1,4 +1,4 @@
-# Homework 2: Tip Calculator
+# CS101 Homework 2: Tip Calculator
 
 ## Objective
 Create a Java program that calculates the tip and total bill for a restaurant meal.
@@ -15,9 +15,9 @@ Create a Java program that calculates the tip and total bill for a restaurant me
 
 ### 1. User Input
 **Use `Scanner` to prompt the user for:**
-1. The bill amount
-2.  The tip percentage they want to leave (e.g., 15, 18, 20)
-3.  The number of people splitting the bill
+1. The bill amount, as either an integer or a double
+2. The tip percentage they want to leave (integers only, e.g., 15, 18, 20)
+3. The number of people splitting the bill (integers only)
 
 ### 2. Arithmetic
 **Calculate:**
@@ -66,15 +66,14 @@ Each person pays: $33.63
 
 ---
 
-## Grading
+## Grading (40 pts)
 
- - 10pts: Code compiles without error
+ - 11pts: Code compiles without error
  - 2pts: Program asks for and accepts the bill amount
  - 2pts: Program asks for and accepts the tip percentage
  - 2pts: Program asks for and accepts the number of people splitting the bill
  - 2pts: Program prints the initial bill amount with correct format, e.g. `$85.50`. Note two decimal places.
- - 2pts: Program prints the tip percentage with correct format, e.g. `18%`. Note percentage `%` is printed to screen.
- - 2pts: Program prints the tip amount with correct format, e.g. `$15.39`. Note two decimal places.
+ - 2pts: Program prints the tip percentage and tip amount together, e.g. `Tip (18%): $15.39`. Note the `%` symbol and two decimal places.
  - 2pts: Program prints the total bill with correct format, e.g. `$100.89`. Note two decimal places.
  - 2pts: Program prints the amount each person pays with correct format, e.g. `$33.63`. Note two decimal places.
  - 15pts: One point awarded for each correct output value (must be exact) for the following test cases:
@@ -87,7 +86,7 @@ Each person pays: $33.63
       <th>Basic</th>
       <th>Add people</th>
       <th>Bill as integer</th>
-      <th>Tip as float</th>
+      <th>Large bill</th>
       <th>Zero tip</th>
     </tr>
   </thead>
@@ -95,51 +94,51 @@ Each person pays: $33.63
     <tr>
       <td rowspan="3"><strong>Input</strong></td>
       <td>Bill</td>
-      <td>10.10</td>
-      <td>10.10</td>
+      <td>20.50</td>
+      <td>20.50</td>
       <td>45</td>
-      <td>120.4</td>
+      <td>10200.5</td>
       <td>25.00</td>
     </tr>
     <tr>
       <td>Tip %</td>
-      <td>10</td>
-      <td>10</td>
+      <td>15</td>
+      <td>15</td>
       <td>25</td>
-      <td>15.7</td>
+      <td>23</td>
       <td>0</td>
     </tr>
     <tr>
       <td>People</td>
       <td>1</td>
       <td>3</td>
-      <td>4</td>
       <td>2</td>
+      <td>25</td>
       <td>2</td>
     </tr>
     <tr>
       <td rowspan="3"><strong>Output (1pt each)</strong></td>
       <td>Tip Amount</td>
-      <td>$1.01</td>
-      <td>$1.01</td>
+      <td>$3.08</td>
+      <td>$3.08</td>
       <td>$11.25</td>
-      <td>$18.90</td>
+      <td>$2346.12</td>
       <td>$0.00</td>
     </tr>
     <tr>
       <td>Total</td>
-      <td>$11.11</td>
-      <td>$11.11</td>
+      <td>$23.58</td>
+      <td>$23.58</td>
       <td>$56.25</td>
-      <td>$139.30</td>
+      <td>$12546.62</td>
       <td>$25.00</td>
     </tr>
     <tr>
       <td>Per Person</td>
-      <td>$11.11</td>
-      <td>$3.70</td>
-      <td>$14.06</td>
-      <td>$69.65</td>
+      <td>$23.58</td>
+      <td>$7.86</td>
+      <td>$28.13</td>
+      <td>$501.86</td>
       <td>$12.50</td>
     </tr>
   </tbody>
@@ -147,6 +146,6 @@ Each person pays: $33.63
 
 
 ### Extra Credit
- - 2pts: Only print the line that shows how much each person pays if there is more than 1 person splitting the bill
- - 1pts: Include at least one emoji that is printed to the console 
- - 1pts: Print a special message (of your choosing) if the user does a tip percentage more than 20% 
+ - 1pt: Only print the line that shows how much each person pays if there is more than 1 person splitting the bill
+ - 1pt: Print a special message (of your choosing) if the user enters a tip percentage greater than 20% 
+ - 0.5pt: Include at least one emoji that is printed to the console
