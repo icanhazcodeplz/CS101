@@ -38,3 +38,6 @@
 ### Not for Quiz3
 - **Type Casting**: Converting a value from one data type to another. e.g. `(double) 5` converts the int `5` to `5.0`.
 - **Parsing**: Analyzing a string and converting it and/or splitting into usable components. e.g. the java compiler parsing `int x = 5` into `type -> int`, `name -> x`, and `value -> 5` , or `Integer.parseInt("123")` parsing the String `"123"` into the int `123`.
+- **Integrated Development Environment (IDE)**: A software application that provides tools for writing, testing, and debugging code all in one place. Examples include VS Code, IntelliJ, and Eclipse.
+- **Widening**: In Java, automatically converting a smaller data type to a larger one with no data loss. e.g. `int` to `double`: `double d = 5;` results in `5.0`.
+- **Narrowing**: In Java, manually converting a larger data type to a smaller one, which may lose data. Requires explicit casting. e.g. `double` to `int`: `int x = (int) 9.99;` results in `9` (decimal truncated).
