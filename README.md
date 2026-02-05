@@ -72,7 +72,7 @@ ___
 
 ___
 
-## Topic 5: Operators and Reading Files
+## Topic 5: Operators, Conditionals
 
 - **Operators**
     - [w3 Java Operators](https://www.w3schools.com/java/java_operators.asp)
@@ -96,6 +96,11 @@ ___
 - [Intellij IDEA](https://www.jetbrains.com/idea/) - Professional level IDE; No additional setup required for Java development
   - Requires significant RAM and may be too slow on old machines
 - [Eclipse IDE](https://eclipseide.org/) - Similar to Intellij, with slightly smaller RAM footprint and older-looking interface
+
+## Windows Intellij IDEA Setup
+ - [Java 25](https://www.oracle.com/java/technologies/downloads/#jdk25-windows)
+ - [Git Bash](https://git-scm.com/install/windows)
+ - [IDEA](https://www.jetbrains.com/idea/download/?section=windows)
 
 
 

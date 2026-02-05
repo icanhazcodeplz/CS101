@@ -12,6 +12,7 @@ Create a Java program that calculates the tip and total bill for a restaurant me
 ---
 
 ## Requirements
+Create a java program called `hw2TipCalculator.java` that does the following: 
 
 ### 1. User Input
 **Use `Scanner` to prompt the user for:**
@@ -149,3 +150,7 @@ Each person pays: $33.63
  - 1pt: Only print the line that shows how much each person pays if there is more than 1 person splitting the bill
  - 1pt: Print a special message (of your choosing) if the user enters a tip percentage greater than 20% 
  - 0.5pt: Include at least one emoji that is printed to the console
+
+
+## Submission
+Upload your hw2TipCalculator.java file on canvas under **"Assignments" -> "HW2 Tip Calculator"**
