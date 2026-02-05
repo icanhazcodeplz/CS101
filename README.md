@@ -101,6 +101,7 @@ ___
  - [Java 25](https://www.oracle.com/java/technologies/downloads/#jdk25-windows)
  - [Git Bash](https://git-scm.com/install/windows)
  - [IDEA](https://www.jetbrains.com/idea/download/?section=windows)
+ - [TODO REMOVE THIS](https://github.com/icanhazcodeplz/folder_exercise)
 
 
 
