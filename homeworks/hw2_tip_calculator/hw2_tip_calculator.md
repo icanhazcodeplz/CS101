@@ -120,8 +120,8 @@ Each person pays: $33.63
     <tr>
       <td rowspan="3"><strong>Output (1pt each)</strong></td>
       <td>Tip Amount</td>
-      <td>$3.08</td>
-      <td>$3.08</td>
+      <td>$3.07</td>
+      <td>$3.07</td>
       <td>$11.25</td>
       <td>$2346.12</td>
       <td>$0.00</td>
