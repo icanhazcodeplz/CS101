@@ -72,10 +72,19 @@ ___
 
 ___
 
-## Topic 5: Operators, Conditionals
+## Topic 5: Booleans, Conditionals
+#### Associated Lab: [lab5_booleans_conditionals](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab5_booleans_conditionals/lab5_booleans_conditionals_writeup.md)
 
-- **Operators**
-    - [w3 Java Operators](https://www.w3schools.com/java/java_operators.asp)
+- **START WITH**: [#15 Boolean Java Tutorial](https://youtu.be/CHVVEGRGiJU?si=tV1tpSfP7ium-Ip1)
+
+- **w3 Pages**
+  - [w3 Java Comparison Operators](https://www.w3schools.com/java/java_operators_comparison.asp)
+  - [w3 Java Logical Operators](https://www.w3schools.com/java/java_operators_logical.asp)
+  - [w3 If...Else](https://www.w3schools.com/java/java_conditions.asp) --> Go through all of these, EXCEPT the "Short Hand If...Else", you can skip that one.
+- **tutorials**
+  - [#16 How To Use Comparison Operators In Java](https://youtu.be/jRdPsDjW8DY?si=il0JghpVUHOIP_dp)
+  - [#17 If Else Statement In Java Tutorial](https://youtu.be/yvWnj_HfG6s?si=cW1iRhV6-qAUZx5R) 
+  - [#20 Logical Operators In Java](https://youtu.be/p0UCTkqU2mg?si=hnrHGEhfsHYzujCr)
 
 ___
 
