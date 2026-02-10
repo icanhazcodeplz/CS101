@@ -80,15 +80,13 @@ ___
 - **w3 Pages**
   - [w3 Java Comparison Operators](https://www.w3schools.com/java/java_operators_comparison.asp)
   - [w3 Java Logical Operators](https://www.w3schools.com/java/java_operators_logical.asp)
-  - [w3 If...Else](https://www.w3schools.com/java/java_conditions.asp) --> Go through all of these, EXCEPT the "Short Hand If...Else", you can skip that one.
+  - [w3 If...Else](https://www.w3schools.com/java/java_conditions.asp) --> Go through all of these EXCEPT the "Short Hand If...Else", this will be covered later.
 - **tutorials**
   - [#16 How To Use Comparison Operators In Java](https://youtu.be/jRdPsDjW8DY?si=il0JghpVUHOIP_dp)
   - [#17 If Else Statement In Java Tutorial](https://youtu.be/yvWnj_HfG6s?si=cW1iRhV6-qAUZx5R) 
   - [#20 Logical Operators In Java](https://youtu.be/p0UCTkqU2mg?si=hnrHGEhfsHYzujCr)
 
 ___
-
-
 
 ## Other Resources
 
