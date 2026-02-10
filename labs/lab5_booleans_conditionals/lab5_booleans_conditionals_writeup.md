@@ -5,9 +5,8 @@ In this exercise you will use Java to practice:
 - Declaring and using `boolean` variables
 - Using logical operators (`&&`, `||`, `!`)
 - Using comparison operators (`>`, `<`, `==`, `!=`, `>=`)
-- Storing comparison results in boolean variables
 - Writing `if/else` statements
-- Writing `if/else-if/else` chains
+- Writing `if/elseIf` chains
 - Combining conditions with logical operators in `if` statements
 
 ---
@@ -15,12 +14,12 @@ In this exercise you will use Java to practice:
 ## Instructions
 
 ### Copy Stub File
-#### Option A: Copy and Paste
+#### Option 1: Copy and Paste
 1. Create a new file in your workspace directory of your Codespaces IDE called `lab5BooleansConditionals.java`
 2. Copy the contents of the [lab5BooleansConditionals.java](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab5_booleans_conditionals/lab5BooleansConditionals.java) (click on link)
 3. Paste the contents into your new `lab5BooleansConditionals.java` file in Codespaces
 
-#### Option B: Download with wget
+#### Option 2: Download with wget
 1. Open the terminal in your Codespaces IDE
 2. Run the following command to download the file:
    ```

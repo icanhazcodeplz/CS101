@@ -99,7 +99,7 @@ public class lab5BooleansConditionals {
         // 16. Experiment with changing the values of x, y, z and isSunny. See if you can predict what will be printed!
         // TODO: Change the values of x, y, z back to their original values
 
-        System.out.println("\n--- if/else-if/else Statements---");
+        System.out.println("\n--- if/elseIf/else Statements---");
 
         // 17. Create a Scanner object called "scanner" to read input from the user
 
@@ -110,7 +110,7 @@ public class lab5BooleansConditionals {
         // 18. Create an int variable called "temp" and use scanner.nextInt() to read the user's input
 
 
-        // 19. Write an if / else-if / else chain for the temperature:
+        // 19. Write an if / elseIf / else chain for the temperature:
         //     - if temp is 50 or above, print "Warm for winter!"
         //     - else if temp is 32 or above, print "It's weird, but this feels warm"
         //     - else if temp is 10 or above, print "Brrrrrrr"
@@ -126,6 +126,7 @@ public class lab5BooleansConditionals {
 
 
         // 20: Run the program a few times, inputting different values for the temperature to test that your code is working as expected
+        // TIP: Make sure to test the outcome if you input EXACTLY 50, 32, or 10. What do we expect based on the wording in 19?
 
         // TODO: Uncomment the line below
         // System.out.print("\nIs it precipitating? [true/false]: ");
@@ -133,12 +134,13 @@ public class lab5BooleansConditionals {
         // 21. Create a boolean variable called "isPrecipitating" and use scanner.nextBoolean() to read the user's input
 
 
-        // 22. Write an if / else-if / else chain:
+        // 22. Write an if / elseIf / else chain:
         //     - if temperature is at or below 32 AND isPrecipitating is true, print "Snow is so pretty :)"
         //     - else if temperature is above 32 AND isPrecipitating is true, print "Umbrella time"
         //     - else if temperature is at or below 32, print "Look out for ice!"
         //     - else, print "Shorts and T-shirt weather"
 
+        // 10% EXTRA CREDIT: Redo 22, but use nested if statements instead of an if/elseIf chain
 
     }
 }
