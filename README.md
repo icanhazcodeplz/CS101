@@ -2,6 +2,14 @@
 Course Content and Resources for CS101, sponsored by [Heights Philadelphia](https://heights.org/), taught through [Arcadia University](https://www.arcadia.edu/).
 ### [Arcadia Course Canvas Link](https://canvas.arcadia.edu/courses/46565)
 ___
+
+## Topic 7: For Loops
+#### Associated Lab: TODO
+
+- [#23 For Loop Java Tutorial](https://youtu.be/3jMaKlNBjug?si=8bCzcB6Ma7CqlgLu)
+- [#24 Nested For Loop In Java Tutorial](https://youtu.be/sk9xYje9XAQ?si=tDOLFjy9TsAj_NJ0)
+- [#25 For Loop Pattern Program In Java](https://youtu.be/3gzvVPD3n0w?si=US_vo7cepiNc5FGg)
+
 ## Topic 6: Compiled vs Interpreted
 #### Associated Lab: [Lab6-Compiled-Interpreted-Handout](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab6_compiled_interpreted/Lab6-Compiled-Interpreted-Handout.pdf)
 
