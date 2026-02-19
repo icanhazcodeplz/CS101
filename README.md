@@ -15,6 +15,7 @@ ___
 ## Topic 6: Compiled vs Interpreted
 #### Associated Lab: [Lab6-Compiled-Interpreted-Handout](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab6_compiled_interpreted/Lab6-Compiled-Interpreted-Handout.pdf)
 
+- **Videos**
   - [Interpreter vs Compiler: What's the Difference?](https://youtu.be/ZWM-I2rRfP8?si=fSMLlX2gHPVWzd74)
   - [Compiler and Interpreter: Compiled Language vs Interpreted Programming Languages](https://youtu.be/I1f45REi3k4?si=hKfAo1IPHYkKiOVA)
   - [Python Vs C++ Vs Java!](https://www.youtube.com/watch?v=hnlz0YYCpBU)
