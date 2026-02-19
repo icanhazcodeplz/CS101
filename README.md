@@ -2,6 +2,15 @@
 Course Content and Resources for CS101, sponsored by [Heights Philadelphia](https://heights.org/), taught through [Arcadia University](https://www.arcadia.edu/).
 ### [Arcadia Course Canvas Link](https://canvas.arcadia.edu/courses/46565)
 ___
+## Topic 6: Compiled vs Interpreted
+#### Associated Lab: [Lab6-Compiled-Interpreted-Handout](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab6_compiled_interpreted/Lab6-Compiled-Interpreted-Handout.pdf)
+
+- [Interpreter vs Compiler: What's the Difference?](https://youtu.be/ZWM-I2rRfP8?si=fSMLlX2gHPVWzd74)
+- [Compiler and Interpreter: Compiled Language vs Interpreted Programming Languages](https://youtu.be/I1f45REi3k4?si=hKfAo1IPHYkKiOVA)
+- [Python Vs C++ Vs Java!](https://www.youtube.com/watch?v=hnlz0YYCpBU)
+
+- **Extra**
+  - [How do computers read code?](https://youtu.be/QXjU9qTsYCc?si=vuXLSX7ymRiKba-W)
 
 ## Topic 5: Booleans, Conditionals
 #### Associated Lab: [lab5_booleans_conditionals](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab5_booleans_conditionals/lab5_booleans_conditionals_writeup.md)
