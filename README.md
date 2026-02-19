@@ -6,16 +6,18 @@ ___
 ## Topic 7: For Loops
 #### Associated Lab: TODO
 
-- [#23 For Loop Java Tutorial](https://youtu.be/3jMaKlNBjug?si=8bCzcB6Ma7CqlgLu)
-- [#24 Nested For Loop In Java Tutorial](https://youtu.be/sk9xYje9XAQ?si=tDOLFjy9TsAj_NJ0)
-- [#25 For Loop Pattern Program In Java](https://youtu.be/3gzvVPD3n0w?si=US_vo7cepiNc5FGg)
+  - [w3 Java For Loops](https://www.w3schools.com/java/java_for_loop.asp)
+  - [w3 Java Nested For-Loops](https://www.w3schools.com/java/java_for_loop_nested.asp)
+  - [#23 For Loop Java Tutorial](https://youtu.be/3jMaKlNBjug?si=8bCzcB6Ma7CqlgLu)
+  - [#24 Nested For Loop In Java Tutorial](https://youtu.be/sk9xYje9XAQ?si=tDOLFjy9TsAj_NJ0)
+  - [#25 For Loop Pattern Program In Java](https://youtu.be/3gzvVPD3n0w?si=US_vo7cepiNc5FGg)
 
 ## Topic 6: Compiled vs Interpreted
 #### Associated Lab: [Lab6-Compiled-Interpreted-Handout](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab6_compiled_interpreted/Lab6-Compiled-Interpreted-Handout.pdf)
 
-- [Interpreter vs Compiler: What's the Difference?](https://youtu.be/ZWM-I2rRfP8?si=fSMLlX2gHPVWzd74)
-- [Compiler and Interpreter: Compiled Language vs Interpreted Programming Languages](https://youtu.be/I1f45REi3k4?si=hKfAo1IPHYkKiOVA)
-- [Python Vs C++ Vs Java!](https://www.youtube.com/watch?v=hnlz0YYCpBU)
+  - [Interpreter vs Compiler: What's the Difference?](https://youtu.be/ZWM-I2rRfP8?si=fSMLlX2gHPVWzd74)
+  - [Compiler and Interpreter: Compiled Language vs Interpreted Programming Languages](https://youtu.be/I1f45REi3k4?si=hKfAo1IPHYkKiOVA)
+  - [Python Vs C++ Vs Java!](https://www.youtube.com/watch?v=hnlz0YYCpBU)
 
 - **Extra**
   - [How do computers read code?](https://youtu.be/QXjU9qTsYCc?si=vuXLSX7ymRiKba-W)
