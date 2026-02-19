@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimum Hardware Requirements for "Hello, World" app</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #1a1a2e;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    .slide-container {
+      background: #ffffff;
+      width: 900px;
+      padding: 40px 48px;
+      border-radius: 8px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e2a4a;
+      font-size: 1.5rem;
+      margin: 0 0 28px 0;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    thead tr {
+      background: #1e2a4a;
+      color: #ffffff;
+    }
+
+    thead th {
+      padding: 14px 16px;
+      text-align: left;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+    }
+
+    thead th:first-child {
+      border-radius: 4px 0 0 0;
+    }
+    thead th:last-child {
+      border-radius: 0 4px 0 0;
+    }
+
+    tbody tr:nth-child(odd) {
+      background: #f4f6fb;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #ffffff;
+    }
+
+    tbody tr:hover {
+      background: #dce8ff;
+      transition: background 0.2s;
+    }
+
+    tbody td {
+      padding: 13px 16px;
+      color: #2c3e50;
+      border-bottom: 1px solid #e0e6f0;
+      vertical-align: middle;
+    }
+
+    tbody td:first-child {
+      font-weight: 700;
+      color: #1e2a4a;
+    }
+
+    .lang-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-c      { background: #d0eaff; color: #0055aa; }
+    .badge-python { background: #fff3cd; color: #7a5800; }
+    .badge-java   { background: #ffe0d0; color: #aa3300; }
+
+    caption {
+      caption-side: bottom;
+      margin-top: 12px;
+      font-size: 0.72rem;
+      color: #888;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <h2>Hardware Requirements for "Hello, World" app</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Requirement</th>
+          <th><span class="lang-badge badge-c">Compiled C</span></th>
+          <th><span class="lang-badge badge-java">Compiled Java</span></th>
+          <th><span class="lang-badge badge-python">Python Script</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>File Type</td>
+          <td>Binary</td>
+          <td>.class (bytecode)</td>
+          <td>.py</td>
+        </tr>
+        <tr>
+          <td>Software Required</td>
+          <td>None</td>
+          <td>JVM</td>
+          <td>Python Interpreter</td>
+        </tr>
+        <tr>
+          <td>CPU Speed</td>
+          <td>~1 MHz</td>
+          <td>~200 MHz</td>
+          <td>~200 MHz</td>
+        </tr>
+        <tr>
+          <td>RAM</td>
+          <td>~1 KB</td>
+          <td>~64–128 MB</td>
+          <td>~25–50 MB</td>
+        </tr>
+        <tr>
+          <td>Storage</td>
+          <td>Size of binary (KB range)</td>
+          <td>~150–200 MB</td>
+          <td>~30–100 MB</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compiled vs Interpreted vs Hybrid Languages</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f0ede8;
+    --card-bg: #faf9f7;
+    --compiled: #c0392b;
+    --interpreted: #1a6ea8;
+    --hybrid: #2e7d52;
+    --text: #1a1a1a;
+    --muted: #888078;
+    --border: #ddd9d2;
+    --accent-c: rgba(192,57,43,0.07);
+    --accent-i: rgba(26,110,168,0.07);
+    --accent-h: rgba(46,125,82,0.07);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    font-family: 'JetBrains Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 1200px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.06);
+    animation: fadeUp 0.5s ease forwards;
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .slide::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, var(--compiled) 33.3%, var(--interpreted) 33.3% 66.6%, var(--hybrid) 66.6%);
+  }
+
+  .slide-header {
+    padding: 40px 52px 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .slide-header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(32px, 4.5vw, 58px);
+    letter-spacing: 4px;
+    line-height: 1;
+    color: var(--text);
+  }
+
+  .slide-header h1 span.c { color: var(--compiled); }
+  .slide-header h1 span.i { color: var(--interpreted); }
+  .slide-header h1 span.h { color: var(--hybrid); }
+
+  .slide-number {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+  }
+
+  .col-headers {
+    display: grid;
+    grid-template-columns: 190px 1fr 1fr 1fr;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .col-label {
+    padding: 16px 24px;
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-right: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .col-label:last-child { border-right: none; }
+  .col-label:first-child { color: var(--muted); }
+
+  .col-label.compiled    { color: var(--compiled);    background: var(--accent-c); }
+  .col-label.interpreted { color: var(--interpreted); background: var(--accent-i); }
+  .col-label.hybrid      { color: var(--hybrid);      background: var(--accent-h); }
+
+  .col-label.compiled::before,
+  .col-label.interpreted::before,
+  .col-label.hybrid::before {
+    content: '';
+    display: inline-block;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .col-label.compiled::before    { background: var(--compiled); }
+  .col-label.interpreted::before { background: var(--interpreted); }
+  .col-label.hybrid::before      { background: var(--hybrid); }
+
+  .row {
+    display: grid;
+    grid-template-columns: 190px 1fr 1fr 1fr;
+    border-bottom: 1px solid var(--border);
+    animation: rowIn 0.35s ease both;
+  }
+
+  .row:last-child { border-bottom: none; }
+  .row:nth-child(1) { animation-delay: 0.08s; }
+  .row:nth-child(2) { animation-delay: 0.16s; }
+  .row:nth-child(3) { animation-delay: 0.24s; }
+  .row:nth-child(4) { animation-delay: 0.32s; }
+  .row:nth-child(5) { animation-delay: 0.40s; }
+
+  @keyframes rowIn {
+    from { opacity: 0; transform: translateX(-8px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  .row:hover > .cell { filter: brightness(0.97); }
+
+  .cell {
+    padding: 18px 24px;
+    border-right: 1px solid var(--border);
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 700;
+    color: var(--text);
+    transition: filter 0.15s;
+  }
+
+  .cell:last-child { border-right: none; }
+
+  .cell.category {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+
+  .cell.compiled-val    { background: var(--accent-c); border-right: 1px solid rgba(192,57,43,0.12); }
+  .cell.interpreted-val { background: var(--accent-i); border-right: 1px solid rgba(26,110,168,0.12); }
+  .cell.hybrid-val      { background: var(--accent-h); }
+
+  .tag {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .tag.fast { background: rgba(192,57,43,0.12); color: var(--compiled); }
+  .tag.slow { background: rgba(26,110,168,0.12); color: var(--interpreted); }
+  .tag.mid  { background: rgba(46,125,82,0.15);  color: var(--hybrid); }
+
+  .lang-pill {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 2px 2px 2px 0;
+  }
+
+  .lang-pill.c-pill {
+    background: rgba(192,57,43,0.1);
+    border: 1px solid rgba(192,57,43,0.25);
+    color: var(--compiled);
+  }
+
+  .lang-pill.i-pill {
+    background: rgba(26,110,168,0.1);
+    border: 1px solid rgba(26,110,168,0.25);
+    color: var(--interpreted);
+  }
+
+  .lang-pill.h-pill {
+    background: rgba(46,125,82,0.1);
+    border: 1px solid rgba(46,125,82,0.25);
+    color: var(--hybrid);
+  }
+
+  .slide-footer {
+    padding: 16px 52px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.015);
+  }
+
+  .footer-note {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+
+  .footer-brand {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #bbb5ac;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="slide-header">
+    <h1>
+      <span class="c">Compiled</span> · <span class="i">Interpreted</span> · <span class="h">Hybrid</span>
+    </h1>
+
+  </div>
+
+  <div class="slide-body">
+
+    <div class="col-headers">
+      <div class="col-label">Category</div>
+      <div class="col-label compiled">Compiled</div>
+      <div class="col-label interpreted">Interpreted</div>
+      <div class="col-label hybrid">Hybrid</div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">How it works</div>
+      <div class="cell compiled-val">Entire source → machine code.</div>
+      <div class="cell interpreted-val">Executed line-by-line at runtime.</div>
+      <div class="cell hybrid-val">Compiled to bytecode; run by Virtual Machine (VM).</div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">Speed</div>
+      <div class="cell compiled-val"><span class="tag fast">FAST</span></div>
+      <div class="cell interpreted-val"><span class="tag slow">SLOWER</span></div>
+      <div class="cell hybrid-val"><span class="tag mid">MEDIUM</span></div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">Portability</div>
+      <div class="cell compiled-val">Platform-specific binary. Recompile per OS.</div>
+      <div class="cell interpreted-val">Runs anywhere an interpreter exists.</div>
+      <div class="cell hybrid-val">Bytecode runs on any supported VM.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">Error Detection</div>
+      <div class="cell compiled-val">Caught at compile time.</div>
+      <div class="cell interpreted-val">Surfaces at runtime.</div>
+      <div class="cell hybrid-val">Compile-time</div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">Dev Speed</div>
+      <div class="cell compiled-val">Slower — compile step each iteration.</div>
+      <div class="cell interpreted-val">Fast — edit and run instantly.</div>
+      <div class="cell hybrid-val">Moderate</div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">Languages</div>
+      <div class="cell compiled-val">
+        <span class="lang-pill c-pill">C</span>
+        <span class="lang-pill c-pill">C++</span>
+        <span class="lang-pill c-pill">Rust</span>
+        <span class="lang-pill c-pill">Go</span>
+      </div>
+      <div class="cell interpreted-val">
+        <span class="lang-pill i-pill">Python</span>
+        <span class="lang-pill i-pill">JavaScript</span>
+        <span class="lang-pill i-pill">PHP</span>
+      </div>
+      <div class="cell hybrid-val">
+        <span class="lang-pill h-pill">Java</span>
+        <span class="lang-pill h-pill">C#</span>
+        <span class="lang-pill h-pill">Kotlin</span>
+        <span class="lang-pill h-pill">Scala</span>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+</body>
+</html>
