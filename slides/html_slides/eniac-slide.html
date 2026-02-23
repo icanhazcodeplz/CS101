@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENIAC</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Courier Prime', monospace;
+  }
+
+  .slide {
+    width: 1280px;
+    height: 720px;
+    background: #060504;
+    border: 3px solid #b8860b;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* Header */
+  .header {
+    background: #0c0b06;
+    border-bottom: 2px solid #b8860b;
+    padding: 22px 52px 18px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .header-left .eyebrow {
+    font-size: 17px;
+    letter-spacing: 4px;
+    color: #d4b045;
+  }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 90px;
+    letter-spacing: 8px;
+    color: #f5a623;
+    line-height: 1;
+    text-shadow: 0 0 40px rgba(245,166,35,0.35);
+  }
+
+  .header-right {
+    text-align: right;
+    padding-bottom: 8px;
+  }
+
+  .header-right .year {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    color: #b8860b;
+    opacity: 0.5;
+    line-height: 1;
+  }
+
+  .header-right .location {
+    font-size: 17px;
+    letter-spacing: 3px;
+    color: #d4b045;
+    text-transform: uppercase;
+  }
+
+  /* Body */
+  .body {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+  }
+
+  .divider {
+    background: linear-gradient(to bottom, transparent, #b8860b 20%, #b8860b 80%, transparent);
+    opacity: 0.35;
+    margin: 20px 0;
+  }
+
+  .panel {
+    padding: 24px 44px;
+  }
+
+  .panel-title {
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #d4b045;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Stats */
+  .stats { display: flex; flex-direction: column; gap: 18px; }
+
+  .stat {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .stat-icon {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #b8860b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #7fff6e;
+    flex-shrink: 0;
+    background: rgba(127,255,110,0.04);
+  }
+
+  .stat-val {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    color: #fff8e0;
+    line-height: 1;
+  }
+
+  .stat-desc {
+    font-size: 16px;
+    color: #ddc870;
+    margin-top: 3px;
+    line-height: 1.4;
+  }
+
+  /* Points */
+  .points { display: flex; flex-direction: column; gap: 16px; }
+
+  .point {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 19px;
+    line-height: 1.55;
+    color: #fff8d0;
+  }
+
+  .point::before {
+    content: '▶';
+    color: #f5a623;
+    font-size: 10px;
+    margin-top: 5px;
+    flex-shrink: 0;
+  }
+
+  /* Footer */
+  .footer {
+    border-top: 1px solid rgba(184,134,11,0.3);
+    padding: 10px 52px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: rgba(220,180,60,0.75);
+    letter-spacing: 2px;
+    background: #0f0e0a;
+  }
+
+  /* Corner marks */
+  .corner { position: absolute; width: 20px; height: 20px; border-color: #b8860b; border-style: solid; }
+  .corner.tl { top: 10px; left: 10px; border-width: 2px 0 0 2px; }
+  .corner.tr { top: 10px; right: 10px; border-width: 2px 2px 0 0; }
+  .corner.bl { bottom: 10px; left: 10px; border-width: 0 0 2px 2px; }
+  .corner.br { bottom: 10px; right: 10px; border-width: 0 2px 2px 0; }
+</style>
+</head>
+<body>
+
+<div class="slide">
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="eyebrow">Electronic Numerical Integrator And Computer</div>
+      <h1>ENIAC</h1>
+    </div>
+    <div class="header-right">
+      <div class="year">1945</div>
+      <div class="location">Philadelphia, PA</div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="panel">
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-icon">⚡</div>
+          <div>
+            <div class="stat-val">18,000 Vacuum Tubes</div>
+            <div class="stat-desc">Consumed 150 kW — enough to power 150 homes</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">⊞</div>
+          <div>
+            <div class="stat-val">30 Tons · 1,800 sq ft</div>
+            <div class="stat-desc">Filled an entire room at the University of Pennsylvania</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">∿</div>
+          <div>
+            <div class="stat-val">5,000 Operations / Second</div>
+            <div class="stat-desc">1,000× faster than any prior mechanical computer</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">✦</div>
+          <div>
+            <div class="stat-val">Six Women Programmers</div>
+            <div class="stat-desc">Pioneering women engineers wrote all of ENIAC's programs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="panel">
+      <div class="points">
+        <div class="point">First general-purpose electronic digital computer — one machine could solve any problem.</div>
+        <div class="point">Built for the U.S. Army in Philadelphia to calculate artillery ballistic tables in seconds, not days.</div>
+        <div class="point">Proved vacuum-tube electronics were reliable enough for large-scale computation.</div>
+        <div class="point">Developed at the Moore School of Electrical Engineering, University of Pennsylvania — operational 1945–1955.</div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
