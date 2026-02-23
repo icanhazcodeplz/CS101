@@ -86,19 +86,19 @@ System.out.println(result);
 ```java
 int x = 10;
 if (x > 5) {
-    System.out.print("A ");
+    System.out.print("a ");
 }
 if (x < 15) {
-    System.out.print("B ");
+    System.out.print("b ");
 }
 if (x > 12) {
-    System.out.print("C ");
+    System.out.print("c ");
 }
 ```
-- A) `A`
-- *answer* **B) `A B`**
-- C) `A B C`
-- D) `B`
+- A) "a "
+- *answer* **B) "a b "**
+- C) "a b c "
+- D) "b "
 
 ---
 
