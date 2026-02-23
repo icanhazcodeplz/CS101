@@ -1,7 +1,7 @@
 # CS101 Quiz 5 - Practice - Answers
 There are 12 points available. The grade will be out of 10 (thus 2 EC points possible)
 ### Covers:
- - Anything from **Lab 5 - Booleans - Conditionals**
+ - Anything from [**Lab 5 - Booleans - Conditionals**](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab5_booleans_conditionals/lab5_booleans_conditionals_writeup.md)
  - Any problem from [**Java Order of Operations Worksheet**](https://github.com/icanhazcodeplz/CS101/blob/main/worksheets/order_of_operations_worksheet.pdf)
  - Any word on the CS101 Github [vocabulary.md](https://github.com/icanhazcodeplz/CS101/blob/main/vocabulary.md)
 
@@ -19,7 +19,7 @@ boolean b = false;
 boolean result = a && b;
 ```
 - A) `true`
-- **B) `false`**
+- *answer* **B) `false`**
 - C) `"true"`
 - D) Compiler error
 
@@ -31,7 +31,7 @@ boolean isSunny = true;
 boolean result = !isSunny;
 ```
 - A) `true`
-- **B) `false`**
+- *answer* **B) `false`**
 - C) `"notSunny"`
 - D) Compiler error
 
@@ -44,7 +44,7 @@ int y = 10;
 System.out.println(x > y);
 ```
 - A) `true`
-- **B) `false`**
+- *answer* **B) `false`**
 - C) `5`
 - D) Compiler error
 
@@ -63,7 +63,7 @@ if (temp > 50) {
 ```
 - A) `warm`
 - B) `cool`
-- **C) `freezing`**
+- *answer* **C) `freezing`**
 - D) `warm` and `cool`
 
 ---
@@ -75,7 +75,7 @@ int y = 5;
 boolean result = (x > y) || (y != 3);
 System.out.println(result);
 ```
-- **A) `true`**
+- *answer* **A) `true`**
 - B) `false`
 - C) `5`
 - D) Compiler error
@@ -96,7 +96,7 @@ if (x > 12) {
 }
 ```
 - A) `A`
-- **B) `A B`**
+- *answer* **B) `A B`**
 - C) `A B C`
 - D) `B`
 
@@ -108,7 +108,7 @@ if (x > 12) {
 int result = 10 - 2 * 3 + 4;
 ```
 - A) 28
-- **B) 8**
+- *answer* **B) 8**
 - C) 0
 - D) 6
 
@@ -119,7 +119,7 @@ int result = 10 - 2 * 3 + 4;
 double result = 15.0 / 3 / 2;
 ```
 - A) `10.0`
-- **B) `2.5`**
+- *answer* **B) `2.5`**
 - C) `2`
 - D) `2.0`
 
@@ -129,7 +129,7 @@ double result = 15.0 / 3 / 2;
 ```java
 boolean result = 4 * 2 == 8 || 3 + 1 > 10;
 ```
-- **A) `true`**
+- *answer* **A) `true`**
 - B) `false`
 - C) `8`
 - D) Compiler error
@@ -140,7 +140,7 @@ boolean result = 4 * 2 == 8 || 3 + 1 > 10;
 
 - A) Human-readable code written by a programmer
 - B) Low-level binary instructions (1s and 0s) that a CPU can execute directly
-- **C) Intermediate, platform-independent code that is not quite machine code and not quite source code**
+- *answer* **C) Intermediate, platform-independent code that is not quite machine code and not quite source code**
 - D) A virtual machine that runs Java programs
 
 ---
