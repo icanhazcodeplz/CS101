@@ -5,7 +5,7 @@ public class lab7ForLoops {
         // 1. Create a Scanner object called "scanner" to read input from the user
 
         // 2. Write a weather report program using Scanner:
-        //   - Ask the user "Is there precipitation? (true/false): " and store it in a boolean called `isPrecipitation`
+        //   - Ask the user "Is there precipitation? (true/false): " and store it in a boolean called `isPrecipitating`
         //        - use scanner.nextBoolean()
         //   - Ask the user "What is the temperature? " and store it in an int called `temp`
         //        - use scanner.nextInt()
@@ -45,7 +45,6 @@ public class lab7ForLoops {
         // System.out.print("\nEnter a number: ");
 
         // 9. Create an int variable called "n" and use scanner.nextInt() to read the user's input
-        int n = scanner.nextInt();
 
         // 10. Write a for-loop that prints the numbers 1 through n
 
