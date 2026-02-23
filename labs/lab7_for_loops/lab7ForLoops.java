@@ -15,26 +15,32 @@ public class lab7ForLoops {
         //
         // Use an if/elseIf/else to solve this.
 
-
         // 3. Rewrite your solution using only if and a nested if/else (no "else if").
         //    It should produce the same result.
+
 
         System.out.println("\n--- Basic For Loop ---");
         // 4. Write a for-loop that prints the numbers 1 through 5
 
-        System.out.println("\n--- Counting by Steps ---");
+
+        System.out.println("\n--- Counting by Twos ---");
         // 5. Write a for-loop that prints even numbers from 2 to 10.
-        // Hint: you might use `i+=2` somewhere
+        // Hint: There are many ways to solve this problem! You could increment by 2 in the for-loop definition,
+        //       use the modulo operator in the for-loop, or use a multiplication operation in the for-loop
+
 
         System.out.println("\n--- Counting Down ---");
-        // 6. Write a for-loop that counts down from 10 to 1
+        // 6. Write a for-loop that counts down from 9 to 0
         // Hint: you might use `i--` somewhere
+
 
         System.out.println("\n--- Accumulating a Sum ---");
         // 7. Create an int variable called `sum` and set it to 0
 
+
         // 8. Write a for-loop that adds the numbers 1 through 10 to `sum`
         // Hint: you might use `sum += i` inside the loop
+
 
         // TODO: Uncomment the line below
         // System.out.println("Sum of 1 to 10: " + sum);
@@ -48,8 +54,8 @@ public class lab7ForLoops {
 
         // 10. Write a for-loop that prints the numbers 1 through n
 
-        System.out.println("\n--- Building a String ---");
 
+        System.out.println("\n--- Building a String ---");
         // 11. Create a String variable called `stars` and set it to "" (empty string)
 
         // 12. Write a for-loop that runs n times and adds a "*" to `stars` each time
@@ -57,6 +63,7 @@ public class lab7ForLoops {
 
         // TODO: Uncomment the line below
         // System.out.println("Stars: " + stars);
+
 
         System.out.println("\n--- Multiplication Table ---");
 
@@ -67,11 +74,17 @@ public class lab7ForLoops {
 
         // 14. Write a for-loop that prints `mult` times all the numbers from 1 to 10, each on a separate line
         //     Example output for mult = 3:
-        //         1 x 3 = 3
-        //         2 x 3 = 6
-        //         3 x 3 = 9
-        //         ...
-
+        //          3 x 1 = 3
+        //          3 x 2 = 6
+        //          3 x 3 = 9
+        //          3 x 4 = 12
+        //          3 x 5 = 15
+        //          3 x 6 = 18
+        //          3 x 7 = 21
+        //          3 x 8 = 24
+        //          3 x 9 = 27
+        //          3 x 10 = 30
+        //
 
     }
 }
