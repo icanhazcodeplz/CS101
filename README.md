@@ -1,16 +1,35 @@
 # CS101
 Course Content and Resources for CS101, sponsored by [Heights Philadelphia](https://heights.org/), taught through [Arcadia University](https://www.arcadia.edu/).
 ### [Arcadia Course Canvas Link](https://canvas.arcadia.edu/courses/46565)
+
+## [HW1 Competition Google Forms](https://forms.gle/mv56TdtjPgGSHgGe9)
 ___
 
 ## Topic 7: For Loops
-#### Associated Lab: TODO
+#### Associated Lab: [Lab7: For Loops](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab7_for_loops/lab7_for_loops_writeup.md)
 
   - [w3 Java For Loops](https://www.w3schools.com/java/java_for_loop.asp)
   - [w3 Java Nested For-Loops](https://www.w3schools.com/java/java_for_loop_nested.asp)
   - [#23 For Loop Java Tutorial](https://youtu.be/3jMaKlNBjug?si=8bCzcB6Ma7CqlgLu)
   - [#24 Nested For Loop In Java Tutorial](https://youtu.be/sk9xYje9XAQ?si=tDOLFjy9TsAj_NJ0)
   - [#25 For Loop Pattern Program In Java](https://youtu.be/3gzvVPD3n0w?si=US_vo7cepiNc5FGg)
+
+> Java for-loops use the syntax:
+> ```java
+>  for (<start>; <stop>; <how>) {
+>    // code is run from <start> to <stop>, incrementing by <how>
+>  }
+> ```
+> - For the `start`, initialize a variable to some integer
+> - For the `stop`, create a condition which defines when the for loop stops running
+> - For the `how`, define how the variable that you initialized in the `start` is going to be updated each loop
+> 
+> For example, to print the numbers from 3 to 12, incrementing by 3 each time, you could use:
+> ```java
+>  for (int n = 3; n <= 12; n+=3) {
+>     System.out.println(n);
+>  }
+> ```
 
 ## Topic 6: Compiled vs Interpreted
 #### Associated Lab: [Lab6-Compiled-Interpreted-Handout](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab6_compiled_interpreted/Lab6-Compiled-Interpreted-Handout.pdf)
