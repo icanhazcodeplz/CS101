@@ -10,9 +10,8 @@ ___
 
   - [w3 Java For Loops](https://www.w3schools.com/java/java_for_loop.asp)
   - [w3 Java Nested For-Loops](https://www.w3schools.com/java/java_for_loop_nested.asp)
-  - [#23 For Loop Java Tutorial](https://youtu.be/3jMaKlNBjug?si=8bCzcB6Ma7CqlgLu)
-  - [#24 Nested For Loop In Java Tutorial](https://youtu.be/sk9xYje9XAQ?si=tDOLFjy9TsAj_NJ0)
-  - [#25 For Loop Pattern Program In Java](https://youtu.be/3gzvVPD3n0w?si=US_vo7cepiNc5FGg)
+  - [Java for loops are easy!](https://youtu.be/vOmZ4JFhRds?si=Y8b9D8jETp0wWN7l)
+  - [Learn Java nested loops in 8 minutes!](https://youtu.be/sd4x2QG2K6U?si=qwGZ3UMlwxyd6fyw)
 
 > Java for-loops use the syntax:
 > ```java
