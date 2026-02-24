@@ -1,7 +1,7 @@
 # CS101 Homework 3 - Mario Blocks
 
 * Based on [CS50 Mario](https://cs50.harvard.edu/x/psets/1/mario/more/) (adapted to Java)
-  * I recommend you watch the "Walkthrough" video about halfway down the page. It describes what to do in "C", but the Java implementation will be very similar.
+  * I recommend you watch the "Walkthrough" video about halfway down the page. It describes how to get started in `C`, but the Java implementation will be very similar.
 * [Super Mario Bros - Full Game Walkthrough (NES)](https://youtu.be/cWOkHQXw0JQ?si=XOe8clBqom_Bl8Hw)
 ---
 
@@ -12,9 +12,9 @@ In the original Super Mario Bros, Mario must jump over pyramids of blocks as he 
 Your program should print **two pyramids** side by side, separated by a **two-space gap**, like this (height 3):
 
 ```
-   #  #
-  ##  ##
- ###  ###
+  #  #
+ ##  ##
+###  ###
 ```
 
 ---
@@ -24,9 +24,9 @@ Your program should print **two pyramids** side by side, separated by a **two-sp
 1. **Prompt the user** for the pyramid height with: `Height: `
 2. The height must be a **positive integer between 1 and 8** (inclusive)
 3. If the user enters an invalid value (negative, zero, greater than 8), **re-prompt** them until they provide a valid height
-  * Note that you are NOT required to handle non-integer inputs, which is required in the cs50 Harvard assignment
+   * You are NOT required to handle non-integer inputs, which is required in the cs50 Harvard assignment
 4. Print the double pyramid using `#` characters with a **two-space gap** between the left and right pyramids
-5. Use **spaces** (not tabs) for alignment — there should be no trailing spaces on any line
+5. Use **spaces** (not tabs) for alignment
 
 ---
 
