@@ -55,6 +55,9 @@
 ## Classes and Objects
 - **Instantiate**: To create a new object from a class. e.g. `Scanner scanner = new Scanner(System.in);` instantiates a new `Scanner` object.
 
+## Programming Concepts
+- **Pseudocode**: An informal, human-readable description of a program's logic that uses plain language and simple structure rather than actual programming syntax. Used to plan out algorithms before writing real code.
+
 ## Compiled and Interpreted
 - **Compiler**: Program that translates the entire code base into machine code or bytecode.
 - **Interpreter**: Program that reads and executes source code one line at a time during runtime.
@@ -67,10 +70,9 @@
 - **Step Reckoner**: A mechanical calculator. The first machine capable of addition, subtraction, multiplication, and division.
 - **Ada Lovelace**: English mathematician who wrote hypothetical programs for the Analytical Engine; often considered the world's first programmer.
 - **Alan Turing**: Often called the father of computer science. Developed foundational concepts in computation, including the theoretical "Turing Machine" which defines what it means for a problem to be computable.
-- **Grace Hopper**: Helped develop the first compiler and contributed to the creation of COBOL, one of the first high-level programming languages.
-- **Punch Card**: A paper card with a grid of positions that can be punched out to represent data. Use to store data and source code that was then fed into computers
+- **Punch Card**: A paper card with a grid of positions that can be punched out to represent data. Used to store data and source code that was then fed into computers one card at a time.
 - **Relay**: An electrically-controlled mechanical switch. Could switch on/off about 50 times per second in the 1940s.
-- **Vacuum Tube**: Electronic component that controls electric current flow inside an airtight glass bulb. No moving parts. Could switch thousands of times per second. Used in computers from the 1940s-1950s.
-- **Semiconductor**: A material that can sometimes conduct electricity and sometimes resist it, depending on conditions. Used as the basis for transistors. The most common semiconductor material is silicon.
+- **Vacuum Tube**: Electronic component that controls electric current flow inside a glass bulb. No moving parts. Could switch thousands of times per second. Used in computers from the 1940s-1950s.
+- **Semiconductor**: A material that can sometimes conduct electricity and sometimes resist it. Used as the basis for transistors. The most common semiconductor material is silicon.
 - **Transistor**: Electronic switch made of semiconductor material, invented in 1947 at Bell Labs. Smaller and faster than vacuum tubes. Can switch on/off millions of times per second.
-- **ENIAC**: The world's first general purpose, programmable, electronic computer. Completed in 1946 at the University of Pennsylvania.
+- **ENIAC**: The world's first general purpose, programmable, electronic computer. Completed in 1946 at the University of Pennsylvania. Used vacuum tubes.

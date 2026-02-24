@@ -2,7 +2,7 @@
 There are 12 points available. The grade will be out of 10 (thus 2 EC points possible)
 ### Covers:
  - Anything from [**Lab 5 - Booleans - Conditionals**](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab5_booleans_conditionals/lab5_booleans_conditionals_writeup.md)
- - Any problem from [**Java Order of Operations Worksheet**](https://github.com/icanhazcodeplz/CS101/blob/main/worksheets/order_of_operations_worksheet.pdf)
+ - Any problem from [**Java Order of Operations Worksheet**](https://github.com/icanhazcodeplz/CS101/tree/main/worksheets)
  - Any word on the CS101 Github [vocabulary.md](https://github.com/icanhazcodeplz/CS101/blob/main/vocabulary.md)
 
 ### During Quiz
