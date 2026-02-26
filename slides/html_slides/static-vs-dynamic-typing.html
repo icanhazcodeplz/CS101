@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statically Typed vs Dynamically Typed</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f0ede8;
+    --card-bg: #faf9f7;
+    --static: #c0392b;
+    --dynamic: #1a6ea8;
+    --text: #1a1a1a;
+    --muted: #888078;
+    --border: #ddd9d2;
+    --accent-s: rgba(192,57,43,0.07);
+    --accent-d: rgba(26,110,168,0.07);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    font-family: 'JetBrains Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 1200px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.06);
+    animation: fadeUp 0.5s ease forwards;
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .slide::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, var(--static) 50%, var(--dynamic) 50%);
+  }
+
+  .slide-header {
+    padding: 40px 52px 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .slide-header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(32px, 4.5vw, 58px);
+    letter-spacing: 4px;
+    line-height: 1;
+    color: var(--text);
+  }
+
+  .slide-header h1 span.s { color: var(--static); }
+  .slide-header h1 span.d { color: var(--dynamic); }
+
+  .col-headers {
+    display: grid;
+    grid-template-columns: 190px 1fr 1fr;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .col-label {
+    padding: 16px 24px;
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-right: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .col-label:last-child { border-right: none; }
+  .col-label:first-child { color: var(--muted); }
+
+  .col-label.static-col  { color: var(--static);  background: var(--accent-s); }
+  .col-label.dynamic-col { color: var(--dynamic); background: var(--accent-d); }
+
+  .col-label.static-col::before,
+  .col-label.dynamic-col::before {
+    content: '';
+    display: inline-block;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .col-label.static-col::before  { background: var(--static); }
+  .col-label.dynamic-col::before { background: var(--dynamic); }
+
+  .row {
+    display: grid;
+    grid-template-columns: 190px 1fr 1fr;
+    border-bottom: 1px solid var(--border);
+    animation: rowIn 0.35s ease both;
+  }
+
+  .row:last-child { border-bottom: none; }
+  .row:nth-child(1) { animation-delay: 0.08s; }
+  .row:nth-child(2) { animation-delay: 0.16s; }
+  .row:nth-child(3) { animation-delay: 0.24s; }
+  .row:nth-child(4) { animation-delay: 0.32s; }
+  .row:nth-child(5) { animation-delay: 0.40s; }
+  .row:nth-child(6) { animation-delay: 0.48s; }
+
+  @keyframes rowIn {
+    from { opacity: 0; transform: translateX(-8px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  .row:hover > .cell { filter: brightness(0.97); }
+
+  .cell {
+    padding: 18px 24px;
+    border-right: 1px solid var(--border);
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 700;
+    color: var(--text);
+    transition: filter 0.15s;
+  }
+
+  .cell:last-child { border-right: none; }
+
+  .cell.category {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+
+  .cell.static-val  { background: var(--accent-s); border-right: 1px solid rgba(192,57,43,0.12); }
+  .cell.dynamic-val { background: var(--accent-d); }
+
+  .lang-pill {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 2px 2px 2px 0;
+  }
+
+  .lang-pill.s-pill {
+    background: rgba(192,57,43,0.1);
+    border: 1px solid rgba(192,57,43,0.25);
+    color: var(--static);
+  }
+
+  .lang-pill.d-pill {
+    background: rgba(26,110,168,0.1);
+    border: 1px solid rgba(26,110,168,0.25);
+    color: var(--dynamic);
+  }
+
+  code {
+    display: block;
+    background: rgba(0,0,0,0.04);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+    white-space: pre;
+    color: var(--text);
+    margin-top: 4px;
+  }
+
+  .code-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  .pro { color: #2e7d52; }
+  .con { color: #c0392b; }
+
+  .pro::before { content: '+ '; }
+  .con::before { content: '- '; }
+
+  .trait {
+    display: block;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="slide-header">
+    <h1>
+      <span class="s">Statically Typed</span> · <span class="d">Dynamically Typed</span>
+    </h1>
+  </div>
+
+  <div class="slide-body">
+
+    <div class="col-headers">
+      <div class="col-label">Category</div>
+      <div class="col-label static-col">Statically Typed</div>
+      <div class="col-label dynamic-col">Dynamically Typed</div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">Definition</div>
+      <div class="cell static-val">Types are known at <strong>compile time</strong>. Once declared, a variable's type cannot change.</div>
+      <div class="cell dynamic-val">Types are determined at <strong>runtime</strong>. A variable can hold different types throughout its lifetime.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">Languages</div>
+      <div class="cell static-val">
+        <span class="lang-pill s-pill">Java</span>
+        <span class="lang-pill s-pill">C</span>
+        <span class="lang-pill s-pill">C++</span>
+        <span class="lang-pill s-pill">Go</span>
+        <span class="lang-pill s-pill">Rust</span>
+      </div>
+      <div class="cell dynamic-val">
+        <span class="lang-pill d-pill">Python</span>
+        <span class="lang-pill d-pill">JavaScript</span>
+        <span class="lang-pill d-pill">Ruby</span>
+        <span class="lang-pill d-pill">PHP</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">Code Example</div>
+      <div class="cell static-val">
+        <div class="code-label">Java</div>
+        <code>int x = 5;
+x = "hello"; // compile error</code>
+      </div>
+      <div class="cell dynamic-val">
+        <div class="code-label">Python</div>
+        <code>x = 5
+x = "hello"  # no error</code>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">Pros</div>
+      <div class="cell static-val">
+        <span class="trait pro">Catches type errors before running</span>
+        <span class="trait pro">Better performance (optimized at compile time)</span>
+        <span class="trait pro">Easier to maintain large codebases</span>
+      </div>
+      <div class="cell dynamic-val">
+        <span class="trait pro">Faster to write &mdash; less boilerplate</span>
+        <span class="trait pro">More flexible and forgiving</span>
+        <span class="trait pro">Great for prototyping and scripting</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cell category">Cons</div>
+      <div class="cell static-val">
+        <span class="trait con">More verbose &mdash; must declare types</span>
+        <span class="trait con">Slower to write for small scripts</span>
+      </div>
+      <div class="cell dynamic-val">
+        <span class="trait con">Type errors only found at runtime</span>
+        <span class="trait con">Slower execution speed</span>
+        <span class="trait con">Harder to debug in large projects</span>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+</body>
+</html>
