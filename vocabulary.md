@@ -57,6 +57,8 @@
 
 ## Programming Concepts
 - **Pseudocode**: An informal, human-readable description of a program's logic that uses plain language and simple structure rather than actual programming syntax. Used to plan out algorithms before writing real code.
+- **Statically Typed**: A language where variable types are known at compile time. Once a variable is declared with a type, it cannot hold a value of a different type. Java and C are statically typed — e.g. `int x = 5;` means `x` can only ever hold an `int`.
+- **Dynamically Typed**: A language where variable types are determined at runtime rather than compile time. A variable can hold different types of values throughout its lifetime. Python, JavaScript, and Ruby are dynamically typed — e.g. in Python, `x = 5` then `x = "hello"` is perfectly valid.
 
 ## Compiled and Interpreted
 - **Compiler**: Program that translates the entire code base into machine code or bytecode.

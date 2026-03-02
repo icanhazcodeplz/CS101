@@ -1,8 +1,40 @@
 # CS101
 Course Content and Resources for CS101, sponsored by [Heights Philadelphia](https://heights.org/), taught through [Arcadia University](https://www.arcadia.edu/).
 ### [Arcadia Course Canvas Link](https://canvas.arcadia.edu/courses/46565)
+___
 
-## [HW1 Competition Google Forms](https://forms.gle/mv56TdtjPgGSHgGe9)
+## Topic 8: While Loops
+#### Associated Lab: [Lab8: While Loops](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab8_while_loops/lab8WhileLoops.java)
+
+  - [w3 Java While Loops](https://www.w3schools.com/java/java_while_loop.asp)
+  - [w3 Java Do-While Loops](https://www.w3schools.com/java/java_while_loop_do.asp)
+  - [#17 While Loop in Java Telusko](https://youtu.be/mzt5tmV7wxI?si=_JqtFgpzRdU0AJfr)
+  - [#18 Do While Loop in Java](https://youtu.be/zzBVTwpfYr0?si=U-xfgZpgUK_4luV_)
+  
+
+> Java while loops use the syntax:
+> ```java
+>  while (<condition>) {
+>    // code runs repeatedly as long as <condition> is true
+>  }
+> ```
+> - The `condition` is checked before each iteration. If it is `true`, the block of code will run once and then check `condition` again, continuing to run as long as `condition` is `true`. If `condition` is `false` from the start, the loop body never runs.
+>
+> For example, to print the numbers from 1 to 5:
+> ```java
+>  int i = 1;
+>  while (i <= 5) {
+>     System.out.println(i);
+>     i++;
+>  }
+> ```
+>
+> A **do-while** loop runs the body at least once, then checks the condition:
+> ```java
+>  do {
+>    // code runs at least once
+>  } while (<condition>);
+> ```
 ___
 
 ## Topic 7: For Loops
@@ -29,6 +61,7 @@ ___
 >     System.out.println(n);
 >  }
 > ```
+___
 
 ## Topic 6: Compiled vs Interpreted
 #### Associated Lab: [Lab6-Compiled-Interpreted-Handout](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab6_compiled_interpreted/Lab6-Compiled-Interpreted-Handout.pdf)
@@ -40,6 +73,7 @@ ___
 
 - **Extra**
   - [How do computers read code?](https://youtu.be/QXjU9qTsYCc?si=vuXLSX7ymRiKba-W)
+___
 
 ## Topic 5: Booleans, Conditionals
 #### Associated Lab: [lab5_booleans_conditionals](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab5_booleans_conditionals/lab5_booleans_conditionals_writeup.md)
@@ -143,7 +177,6 @@ ___
  - [Java 25](https://www.oracle.com/java/technologies/downloads/#jdk25-windows)
  - [Git Bash](https://git-scm.com/install/windows)
  - [IDEA](https://www.jetbrains.com/idea/download/?section=windows)
- - [TODO REMOVE THIS](https://github.com/icanhazcodeplz/folder_exercise)
 
 
 
