@@ -1,16 +1,17 @@
 ### Java Order of Operations
 
-| Priority | Operator(s)         | Description |
-|----------|---------------------|-----------|
-| 1 | `( )`               | Parentheses |
-| 2 | `**`                | Exponentiation |
-| 3 | `*`, `/`, `%`       | Multiplication, Division, Modulus |
-| 4 | `+`, `−`            | Addition, Subtraction |
-| 5 | `>`, `<`, `>=`, `<=` | Relational / Comparison |
-| 6 | `==`, `!=`          | Equality |
-| 7 | `&&`                | Logical AND |
-| 8 | `||`                | Logical OR |
-| 9 | `=`, `+=`, `-=`     | Assignment |
+| Priority | Operator(s)          | Description |
+|----------|----------------------|-----------|
+| 1 | `( )`                | Parentheses |
+| 2 | `**` , `Math.pow()`  | Exponentiation |
+| 3 | `!`                  | Logical NOT |
+| 4 | `*`, `/`, `%`        | Multiplication, Division, Modulus |
+| 5 | `+`, `−`             | Addition, Subtraction |
+| 6 | `>`, `<`, `>=`, `<=` | Relational / Comparison |
+| 7 | `==`, `!=`           | Equality |
+| 8 | `&&`                 | Logical AND |
+| 9 | `                    ||`                | Logical OR |
+| 10 | `=`, `+=`, `-=`      | Assignment |
 
 ---
 

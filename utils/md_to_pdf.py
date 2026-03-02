@@ -50,11 +50,11 @@ def md_to_pdf(input_path, output_path=None):
 <meta charset="utf-8">
 <style>
     @page {{
-        margin: 0.4in;
+        margin: 0.3in;
     }}
     body {{
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.5;
         margin: 0;
         color: #333;
@@ -72,7 +72,7 @@ def md_to_pdf(input_path, output_path=None):
         background: #f0f0f0;
         padding: 8px 12px;
         border-radius: 4px;
-        font-size: 13px;
+        font-size: 12px;
         overflow-x: auto;
     }}
     .codehilite pre {{
@@ -80,7 +80,7 @@ def md_to_pdf(input_path, output_path=None):
     }}
     code {{
         font-family: "Menlo", "Consolas", "Courier New", monospace;
-        font-size: 13px;
+        font-size: 12px;
     }}
     p code {{
         background: #f0f0f0;
