@@ -50,6 +50,7 @@ def md_to_pdf(input_path, output_path=None):
 <meta charset="utf-8">
 <style>
     @page {{
+        size: letter;
         margin: 0.3in;
     }}
     body {{
