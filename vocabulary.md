@@ -24,6 +24,7 @@
 - **Terminal**: Text-based interface for typing commands directly to the shell (also called command line or console)
 - **Graphical User Interface (GUI)**: Visual interface with windows, icons, and menus that users interact with using a mouse/touch
 - **Integrated Development Environment (IDE)**: A software application that provides tools for writing, testing, and debugging code all in one place. Examples include VS Code, IntelliJ, and Eclipse.
+- **Debugger**: A tool that lets you pause a running program, step through it line by line, and inspect variable values to find and fix bugs. Most IDEs have a built-in debugger.
 
 ## File Systems
 - **File System**: Organizational structure to store folders, subfolders, and files.
@@ -59,6 +60,8 @@
 - **Pseudocode**: An informal, human-readable description of a program's logic that uses plain language and simple structure rather than actual programming syntax. Used to plan out algorithms before writing real code.
 - **Statically Typed**: A language where variable types are known at compile time. Once a variable is declared with a type, it cannot hold a value of a different type. Java and C are statically typed — e.g. `int x = 5;` means `x` can only ever hold an `int`.
 - **Dynamically Typed**: A language where variable types are determined at runtime rather than compile time. A variable can hold different types of values throughout its lifetime. Python, JavaScript, and Ruby are dynamically typed — e.g. in Python, `x = 5` then `x = "hello"` is perfectly valid.
+- **Hard-coded**: A value written directly into the source code rather than being computed, passed in, or read from input. e.g. `int max = 100;` hard-codes the maximum to `100` instead of letting the user provide it.
+- **Scope**: The region of code where a variable exists and can be accessed. A variable declared inside a block (between `{ }`) is only accessible within that block. e.g. a variable declared inside a `for` loop cannot be used outside of it.
 
 ## Compiled and Interpreted
 - **Compiler**: Program that translates the entire code base into machine code or bytecode.
