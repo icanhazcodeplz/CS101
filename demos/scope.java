@@ -8,11 +8,9 @@ public class scope {
 
         int x = 1;
         if (true) {
-            System.out.println("Inside");
-            System.out.println("x = " + x);
+            System.out.println("Inside, x = " + x);
         }
-        System.out.println("Outside");
-        System.out.println("x = " + x);
+        System.out.println("Outside, x = " + x);
 
         /* TODO
         - move x inside (error)
