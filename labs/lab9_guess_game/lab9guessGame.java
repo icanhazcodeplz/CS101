@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class lab9guessGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int userGuess = 0;
+        while (userGuess != 8) {
+            userGuess = scanner.nextInt();
+        }
+        /*
+        TODO: Improve this game by completing the following tasks:
+          1. Add a prompt to tell the user how to play the game. Restrict the game to be between
+             two numbers of your choosing (for example, "Pick a number between 1 and 5").
+          2. Use a do-while loop instead of a while loop
+          3. Add print statements such that the user is informed of the following situations:
+               - The guess was incorrect
+               - The guess was correct
+               - The guess was too low (if statement required)
+               - The guess was too high (if statement required)
+          4. Keep track of the number of times the user guesses and print the count after they win
+          5. Instead of a hard-coded secret number, use a randomly generated one so that it
+             is different each time the program is run.
+         */
+
+    }
+}
