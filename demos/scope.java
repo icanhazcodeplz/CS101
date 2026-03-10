@@ -7,19 +7,16 @@ public class scope {
         // =============================================================
 
         int x = 1;
-        int y = 2;
-        if (x == 1) {
+        if (true) {
             System.out.println("Inside");
             System.out.println("x = " + x);
-            System.out.println("y = " + y);
         }
         System.out.println("Outside");
         System.out.println("x = " + x);
-        System.out.println("y = " + y);
 
         /* TODO
-        - move y inside (error)
-        - reassign y inside (value remains outside)
+        - move x inside (error)
+        - reassign x inside (value remains outside)
         - for loop (show debugger)
         - define iterator outside for-loop
         - Add inner loop
