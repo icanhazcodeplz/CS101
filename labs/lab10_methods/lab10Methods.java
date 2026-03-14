@@ -21,6 +21,7 @@ public class lab10Methods {
     //      - takes two int parameters called `a` and `b`
     //      - returns the sum of `a` and `b`
 
+
     // 4. Define a method called `isEven` that:
     //      - is public and static
     //      - returns a boolean
@@ -64,13 +65,14 @@ public class lab10Methods {
 
         System.out.println("\n=== 6. Putting It All Together ===");
 
-        // 6. Ask the user for two integers using a Scanner, then print:
-        //       - the sum (using your add method)
-        //       - the larger number (using your max method)
-        //       - whether each number is even (using your isEven method)
-        //       - Use print statements as needed to make it clear to the user what to
-        //         do and what values are being printed
-
+        // 6. While working on this problem, use print statements as needed to make
+        //    it clear to the user what to do and what values are being printed
+        //      a. Use a Scanner to ask the user for a number
+        //      b. If this number is even, print "The number is even!" (use your `isEven` method)
+        //      c. Use a Scanner to ask the user for another number
+        //      d. If this number is even, print "The number is even!" (use your `isEven` method)
+        //      e. Print the sum of the two numbers (use your `add` method)
+        //      f. Print the larger of the two numbers (use your `max` method)
 
     }
 }
