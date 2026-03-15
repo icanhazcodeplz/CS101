@@ -3,6 +3,41 @@ Course Content and Resources for CS101, sponsored by [Heights Philadelphia](http
 ### [Arcadia Course Canvas Link](https://canvas.arcadia.edu/courses/46565)
 ___
 
+## Topic 10: Methods
+#### Associated Lab: [lab10Methods](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab10_methods/lab10Methods.java)
+ - [w3 Java Methods](https://www.w3schools.com/java/java_methods.asp)
+ - [w3 Java Parameters](https://www.w3schools.com/java/java_methods_param.asp)
+ - [Methods in Java Tutorial #26](https://youtu.be/cCgOESMQe44?si=HryUGHDdBNI4Uu2x)
+ - [METHODS in Java are easy](https://youtu.be/JKecvKiNX2I?si=U-W9Zp22eVVyQdaH)
+
+> Methods are a named, reusable block of code that performs a specific task.
+> 
+> Java methods use the syntax:
+> ```java
+>  public static <returnType> <methodName>(<parameters>) {
+>    // code that runs when the method is called
+>  }
+> ```
+> - `returnType` is the data type the method sends back (e.g. `int`, `String`, `boolean`). Use `void` if the method returns nothing.
+> - `parameters` are inputs the method receives, each with a type and name, separated by commas. A method does not need to have `parameters`.
+>
+> For example, a method named "***add***" that that takes two integers, `a` and `b`, as parameters and returns their sum as an `int`:
+> ```java
+>  public static int add(int a, int b) {
+>     return a + b;
+>  }
+> ```
+> You ***call*** a method by placing parenthesis to the right of the method. Inside the parenthesis, add comma separated ***arguments*** matching the type(s) of the method's ***parameters***. 
+> ```java
+>  int result = add(3, 5); // Passing in the arguments 3 and 5
+> ```
+> In this example, the ***return value*** from the method is assigned to `result` 
+
+___
+## Topic 9: Scope
+ - [w3 Java Scope](https://www.w3schools.com/java/java_scope.asp)
+
+---
 ## Topic 8: While Loops
 #### Associated Lab: [Lab8: While Loops](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab8_while_loops/lab8WhileLoops.java)
 
@@ -178,6 +213,16 @@ ___
  - [Git Bash](https://git-scm.com/install/windows)
  - [IDEA](https://www.jetbrains.com/idea/download/?section=windows)
 
+### Windows Tips for Reducing Memory load
+
+ - Uninstall ubuntu
+   - Use windows key, search "Ubuntu", select "Uninstall"
+   - Open the app `Powershell` as an Administrator
+   - Run commands
+     - `wsl --unregister Ubuntu`
+     - `wsl --uninstall`
+ - Uninstall the follow apps
+   - `Microsoft 365 Copilot`
 
 
 
