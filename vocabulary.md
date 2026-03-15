@@ -81,3 +81,11 @@
 - **Semiconductor**: A material that can sometimes conduct electricity and sometimes resist it. Used as the basis for transistors. The most common semiconductor material is silicon.
 - **Transistor**: Electronic switch made of semiconductor material, invented in 1947 at Bell Labs. Smaller and faster than vacuum tubes. Can switch on/off millions of times per second.
 - **ENIAC**: The world's first general purpose, programmable, electronic computer. Completed in 1946 at the University of Pennsylvania. Used vacuum tubes.
+
+## Methods
+- **Method**: A named, reusable block of code that performs a specific task. Defined with a return type, name, and optional parameters. e.g. `public static int add(int a, int b) { return a + b; }`
+- **Parameter**: A variable listed in a method's definition that acts as a placeholder for the value the method will receive. e.g. in `public static void greet(String name)`, `name` is a parameter.
+- **Argument**: The actual value passed to a method when it is called. e.g. in `greet("Alice")`, `"Alice"` is the argument.
+- **Return Type**: The data type of the value a method sends back to the caller. e.g. `int` in `public static int add(int a, int b)`. If a method returns nothing, its return type is `void`.
+- **Return Value**: The actual value that a method sends back to the caller using a `return` statement. e.g. in `return a + b;`, if `a` is 3 and `b` is 5, the return value is `8`.
+- **Method Call**: Executing a method by writing its name followed by parentheses with any required arguments. e.g. `add(3, 5)` calls the `add` method with arguments `3` and `5`. Often phrased as "calling a method".
