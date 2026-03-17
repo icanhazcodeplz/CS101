@@ -3,7 +3,7 @@
 The final project is worth 20% of your overall grade. It is split into three sections, with a total of 100 points:
 
 
-## 1. (10pts) [Project Proposal](https://github.com/icanhazcodeplz/CS101/blob/main/final_project/1-Project-Proposal.pdf) - Due April 10
+## 1. (10pts) [Project Proposal](https://github.com/icanhazcodeplz/CS101/blob/main/final_project/1-Project-Proposal.pdf) - Due In Class April 9
 
 ## 2. (20pts) Prototype Demo - During class May 7
 

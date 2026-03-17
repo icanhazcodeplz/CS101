@@ -1,4 +1,4 @@
-# CS101 Project Proposal (10pts)
+# CS101 Project Proposal (10pts) - Due in class 4/9
 
 This worksheet will be graded for completion (5pts) and effort (5pts). It will count as 10% of the overall project grade.
 
