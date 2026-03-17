@@ -6,7 +6,7 @@ This worksheet will be graded for completion (5pts) and effort (5pts). It will c
  - Think of three potential ideas to do for your final project. 
  - You are allowed to choose 1 option from the list of examples on GitHub, if you want. At least two ideas must be your own.
  - Mr. M will review your proposals and then discuss with you which option is the best to proceed with.
- - If an Android App is chosen, Mr. M will provide boilerplate code and help you get Android Studio set up to create your app. An Android App will ineveitably be more difficult to get running and will be more frustrating. The reward is that you get to see your working app on a phone!
+ - If an Android App is chosen, you will be required to use Android Studio as your IDE. It will be functional, but rather slow on your machine. Mr. M will provide boilerplate code and help you get Android Studio set up to create your app. An Android App will ineveitably be more difficult to get running and will be more frustrating. The reward is that you get to see your working app on a phone!
 
 ### Requirements
  - The app must use at least two of: **if/else** statements; **for-loops**; **while-loops**; **methods**; **arrays**
