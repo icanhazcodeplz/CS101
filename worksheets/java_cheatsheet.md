@@ -108,3 +108,14 @@ do {
 </td>
 </tr>
 </table>
+
+<div style="page-break-before: always;"></div>
+
+### Java Methods
+
+```java
+public static <returnType> <methodName>(<parameters>) {
+    // code that runs when the method is called
+    return <someValue> // Note: Don't need 'return' if <returnType> is `void`
+}
+```
