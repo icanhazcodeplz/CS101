@@ -69,12 +69,16 @@ def md_to_pdf(input_path, output_path=None):
         border-top: 1px solid #ccc;
         margin: 1em 0;
     }}
+    p {{
+        margin-bottom: 0.2em;
+    }}
     .codehilite {{
         background: #f0f0f0;
-        padding: 8px 12px;
-        border-radius: 4px;
+        padding: 1px 2px;
+        border-radius: 2px;
         font-size: 12px;
         overflow-x: auto;
+        margin-top: 0.2em;
     }}
     .codehilite pre {{
         margin: 0;
@@ -97,7 +101,7 @@ def md_to_pdf(input_path, output_path=None):
     }}
     td {{
         vertical-align: top;
-        padding: 8px;
+        padding: 6px;
     }}
     {code_css}
 </style>
