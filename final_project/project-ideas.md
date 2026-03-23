@@ -1,4 +1,4 @@
-## CS101 Potential Project Ideas
+**## CS101 Potential Project Ideas
 
 ### Tip Calculator (*Android App*)
  - **Inputs**: User types in the ***Bill***, ***Tip Percentage***, and ***Number of People***, then hits a button that says **SUBMIT**
@@ -33,5 +33,11 @@
 ### Rock Paper Scissors (*CLI or Android App*)
  - **Inputs**: User selects ***Rock***, ***Paper***, or ***Scissors*** by typing or pressing a button
  - **Logic Required**: Generate a ***Random Choice*** for the computer, compare both choices to determine ***Win***, ***Lose***, or ***Tie***, track ***Wins***, ***Losses***, and ***Ties*** across rounds
- - **Outputs**: The app displays the ***Computer's Choice***, the ***Result*** of each round, and a ***Running Scoreboard***
+ - **Outputs**: The app displays the ***Computer's Choice***, the ***Result*** of each round, and a ***Running Scoreboard*****
+
+### Pokémon Battle (*CLI or Android App*)
+ - **Inputs**: User selects a ***Move*** from a list of available attacks by typing a number or pressing a button
+ - **Logic Required**: Extend the Pikachu Battle from HW4 — add more ***Pokémon*** to choose from, each with unique ***Moves***, ***Health***, and ***Stats***. Use ***Random Numbers*** for damage ranges and miss chances, track ***HP*** for both sides, and determine when a Pokémon ***Faints***
+ - **Outputs**: The app displays each turn's ***Attack***, whether it ***Hit*** or ***Missed***, the ***Damage*** dealt, both Pokémon's ***Remaining HP***, and announces the ***Winner***
+
 
