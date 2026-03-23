@@ -118,7 +118,6 @@ public static <returnType> <methodName>(<parameters>) {
 }
 ```
 
----
 
 ### Java Arrays
 
@@ -157,7 +156,7 @@ numbers.length   // number of elements
 
 ### for-each loop
 ```java
-for (<type> <elementName> : <nameOfArray>) {
+for (int num : numbers) {
     // code block
 }
 ```
