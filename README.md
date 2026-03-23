@@ -3,6 +3,35 @@ Course Content and Resources for CS101, sponsored by [Heights Philadelphia](http
 ### [Arcadia Course Canvas Link](https://canvas.arcadia.edu/courses/46565)
 ___
 
+## Topic 11: Arrays
+#### Associated Lab: [lab11Arrays](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11Arrays.java)
+ - [w3 Java Arrays](https://www.w3schools.com/java/java_arrays.asp)
+ - [w3 Java Arrays Loop](https://www.w3schools.com/java/java_arrays_loop.asp)
+ - [Learn Java arrays in 9 minutes!](https://youtu.be/9dr2mHYYoug?si=_4GaVz69puYrpvZS)
+
+> An **array** is a variable that holds multiple values of the same type.
+>
+> To create an array with values already known:
+> ```java
+>  int[] numbers = {10, 20, 30, 40, 50};
+> ```
+> To create an empty array of a specific size:
+> ```java
+>  int[] numbers = new int[5];
+> ```
+> Access or modify elements using their **index** (starting at 0):
+> ```java
+>  System.out.println(numbers[0]); // prints the first element
+>  numbers[1] = 99;                // changes the second element
+> ```
+> Use a **for-each loop** to iterate over elements:
+> ```java
+>  for (int num : numbers) {
+>     System.out.println(num);
+>  }
+> ```
+
+___
 ## Topic 10: Methods
 #### Associated Lab: [lab10Methods](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab10_methods/lab10Methods.java)
  - [w3 Java Methods](https://www.w3schools.com/java/java_methods.asp)

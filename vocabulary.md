@@ -89,3 +89,11 @@
 - **Return Type**: The data type of the value a method sends back to the caller. e.g. `int` in `public static int add(int a, int b)`. If a method returns nothing, its return type is `void`.
 - **Return Value**: The actual value that a method sends back to the caller using a `return` statement. e.g. in `return a + b;`, if `a` is 3 and `b` is 5, the return value is `8`.
 - **Method Call**: Executing a method by writing its name followed by parentheses with any required arguments. e.g. `add(3, 5)` calls the `add` method with arguments `3` and `5`. Often phrased as "calling a method".
+
+## ***Not*** on Quiz8 on Mar 24:
+
+### Arrays
+- **Array**: A fixed-size data structure that holds multiple values of the same type. e.g. `int[] numbers = {10, 20, 30};` creates an array of three integers.
+- **Index**: The position of an element in an array, starting at 0. e.g. in `{10, 20, 30}`, index 0 is `10`, index 1 is `20`, index 2 is `30`.
+- **Element**: A single value stored at a specific index in an array. e.g. in `int[] nums = {10, 20, 30};`, `20` is the element at index 1.
+

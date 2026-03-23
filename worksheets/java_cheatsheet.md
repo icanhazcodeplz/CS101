@@ -109,8 +109,6 @@ do {
 </tr>
 </table>
 
-<div style="page-break-before: always;"></div>
-
 ### Java Methods
 
 ```java
@@ -119,3 +117,51 @@ public static <returnType> <methodName>(<parameters>) {
     return <someValue> // Note: Don't need 'return' if <returnType> is `void`
 }
 ```
+
+---
+
+### Java Arrays
+
+<table>
+<tr>
+<td>
+
+### Create with values
+```java
+int[] numbers = {10, 20, 30, 40, 50};
+String[] colors = {"red", "green", "blue"};
+```
+
+</td>
+<td>
+
+### Create empty (fixed size)
+```java
+int[] numbers = new int[5];
+```
+
+</td>
+</tr>
+<tr>
+<td>
+
+### Access / Modify
+```java
+numbers[0]       // first element
+numbers[2] = 99; // change third element
+numbers.length   // number of elements
+```
+
+</td>
+<td>
+
+### for-each loop
+```java
+for (<type> <elementName> : <nameOfArray>) {
+    // code block
+}
+```
+
+</td>
+</tr>
+</table>

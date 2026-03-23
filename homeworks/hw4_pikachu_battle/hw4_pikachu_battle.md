@@ -1,4 +1,4 @@
-# ⚡ CS101 Assignment: Pikachu Battle (Java)
+# ⚡ CS101 Assignment: Pikachu Battle
 
 You are going to create a simplified version of the battle sequences from the 
 original [Pokemon GameBoy Games](https://en.wikipedia.org/wiki/Pok%C3%A9mon_Red,_Blue,_and_Yellow),
