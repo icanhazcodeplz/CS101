@@ -98,6 +98,8 @@ def md_to_pdf(input_path, output_path=None):
     table {{
         border-collapse: collapse;
         width: 100%;
+        margin-top: -0.5em;
+        margin-bottom: 2.0em;
     }}
     td {{
         vertical-align: top;
