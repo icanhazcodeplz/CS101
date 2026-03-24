@@ -1,4 +1,4 @@
-public class lab132dArrays {
+public class lab12Arrays2d {
     public static void main(String[] args) {
 
         System.out.println("\n--- Creating a 2D Array ---");
