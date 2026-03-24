@@ -3,11 +3,51 @@ Course Content and Resources for CS101, sponsored by [Heights Philadelphia](http
 ### [Arcadia Course Canvas Link](https://canvas.arcadia.edu/courses/46565)
 ___
 
+
+
+## Topic 12: ArrayList, File Scanner
+#### Associated Lab: [lab13FileScannerArrayList](TODO)
+ - [w3 Java ArrayList](https://www.w3schools.com/java/java_arraylist.asp)
+ - [w3 Java Files](https://www.w3schools.com/java/java_files_read.asp)
+ - [ArrayList in Java Tutorial #36](https://youtu.be/pTAda7qU4LY?si=Csr94zQXCNBkP4M4)
+
+> An **ArrayList** is like an array, but it can grow and shrink in size.
+>
+> ```java
+>  import java.util.ArrayList;
+>  ArrayList<String> names = new ArrayList<String>();
+> ```
+> Note: ArrayLists use object types (`String`, `Integer`, `Double`), not primitives (`int`, `double`).
+>
+> Common methods:
+> ```java
+>  names.add("Alice");       // add to the end
+>  names.get(0);             // access by index
+>  names.set(0, "Bob");      // change an element
+>  names.remove("Alice");    // remove by value
+>  names.size();             // number of elements
+>  names.contains("Bob");    // check if element exists
+> ```
+>
+> A **Scanner** can read from a file just like it reads from `System.in`:
+> ```java
+>  import java.io.File;
+>  File file = new File("data.txt");
+>  Scanner fileScanner = new Scanner(file);
+>  while (fileScanner.hasNextLine()) {
+>     String line = fileScanner.nextLine();
+>  }
+>  fileScanner.close();
+> ```
+
+___
 ## Topic 11: Arrays
-#### Associated Lab: [lab11Arrays](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11Arrays.java)
+#### Associated Labs: [lab11Arrays](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11Arrays.java) and [lab12Arrays2d](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab12_arrays2d/lab12Arrays2d.java)
  - [w3 Java Arrays](https://www.w3schools.com/java/java_arrays.asp)
  - [w3 Java Arrays Loop](https://www.w3schools.com/java/java_arrays_loop.asp)
+ - [w3 Java Multidimensional Arrays](https://www.w3schools.com/java/java_arrays_multi.asp)
  - [Learn Java arrays in 9 minutes!](https://youtu.be/9dr2mHYYoug?si=_4GaVz69puYrpvZS)
+ - [Learn Java 2D arrays in 9 minutes!](https://youtu.be/Qf3Nczxm2AY?si=wiPl-Nzcxd1yNArt)
 
 > An **array** is a variable that holds multiple values of the same type.
 >
@@ -30,6 +70,29 @@ ___
 >     System.out.println(num);
 >  }
 > ```
+>
+> ### Multidimensional Arrays
+>
+> A **multidimensional array** is an array of arrays — it lets you store data in a grid (rows and columns).
+>
+> To create a 2D array:
+> ```java
+>  int[][] grid = {
+>     {1, 2, 3},
+>     {4, 5, 6},
+>     {7, 8, 9}
+>  };
+> ```
+> To create an empty 2D array (3 rows, 4 columns):
+> ```java
+>  int[][] grid = new int[3][4];
+> ```
+> Access elements using **two indices** — `[row][column]`:
+> ```java
+>  System.out.println(grid[0][2]); // row 0, column 2 → prints 3
+>  grid[1][0] = 99;               // changes row 1, column 0
+> ```
+
 
 ___
 ## Topic 10: Methods

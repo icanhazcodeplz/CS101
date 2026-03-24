@@ -164,3 +164,88 @@ for (int num : numbers) {
 </td>
 </tr>
 </table>
+
+---
+
+### Multidimensional Arrays (2D)
+
+<table>
+<tr>
+<td>
+
+### Create with values
+```java
+int[][] grid = {
+    {1, 2, 3},
+    {4, 5, 6}
+};
+```
+
+</td>
+<td>
+
+### Create empty (fixed size)
+```java
+int[][] grid = new int[2][3]; // 2 rows, 3 columns
+```
+
+</td>
+</tr>
+<tr>
+<td>
+
+### Access / Modify
+```java
+grid[0][2]       // row 0, column 2
+grid[1][0] = 99; // change row 1, column 0
+grid.length      // number of rows
+grid[0].length   // number of columns
+```
+
+</td>
+<td>
+
+### Nested loop
+```java
+for (int r = 0; r < grid.length; r++) {
+    for (int c = 0; c < grid[r].length; c++) {
+        System.out.print(grid[r][c] + " ");
+    }
+    System.out.println();
+}
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+### ArrayList
+
+<table>
+<tr>
+<td>
+
+### Create
+```java
+ArrayList<String> names = new ArrayList<String>();
+```
+**Note:** Use object types (`String`, `Integer`, `Double`), not primitives.
+
+</td>
+<td>
+
+### Common methods
+```java
+names.add("Alice");      // add to end
+names.get(0);            // access by index
+names.set(0, "Bob");     // change element
+names.remove("Alice");   // remove by value
+names.size();            // number of elements
+names.contains("Bob");   // check if exists
+```
+
+</td>
+</tr>
+</table>
