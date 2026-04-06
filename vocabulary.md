@@ -74,8 +74,6 @@
 ## History of Computing
 - **Step Reckoner**: A mechanical calculator. The first machine capable of addition, subtraction, multiplication, and division.
 - **Ada Lovelace**: English mathematician who wrote hypothetical programs for the Analytical Engine; often considered the world's first programmer.
-- **Alan Turing**: Often called the father of computer science. Developed foundational concepts in computation, including the theoretical "Turing Machine" which defines what it means for a problem to be computable.
-- **Punch Card**: A paper card with a grid of positions that can be punched out to represent data. Used to store data and source code that was then fed into computers one card at a time.
 - **Relay**: An electrically-controlled mechanical switch. Could switch on/off about 50 times per second in the 1940s.
 - **Vacuum Tube**: Electronic component that controls electric current flow inside a glass bulb. No moving parts. Could switch thousands of times per second. Used in computers from the 1940s-1950s.
 - **Semiconductor**: A material that can sometimes conduct electricity and sometimes resist it. Used as the basis for transistors. The most common semiconductor material is silicon.
@@ -90,9 +88,7 @@
 - **Return Value**: The actual value that a method sends back to the caller using a `return` statement. e.g. in `return a + b;`, if `a` is 3 and `b` is 5, the return value is `8`.
 - **Method Call**: Executing a method by writing its name followed by parentheses with any required arguments. e.g. `add(3, 5)` calls the `add` method with arguments `3` and `5`. Often phrased as "calling a method".
 
-## ***Not*** on Quiz8 on Mar 24:
-
-### Arrays
+## Arrays
 - **Array**: A fixed-size data structure that holds multiple values of the same type. e.g. `int[] numbers = {10, 20, 30};` creates an array of three integers.
 - **Index**: The position of an element in an array, starting at 0. e.g. in `{10, 20, 30}`, index 0 is `10`, index 1 is `20`, index 2 is `30`.
 - **Element**: A single value stored at a specific index in an array. e.g. in `int[] nums = {10, 20, 30};`, `20` is the element at index 1.

@@ -231,7 +231,7 @@ for (int r = 0; r < grid.length; r++) {
 ```java
 ArrayList<String> names = new ArrayList<String>();
 ```
-**Note:** Use object types (`String`, `Integer`, `Double`), not primitives.
+**Note:** Must use object types (`String`, `Integer`, `Double`), not primitives.
 
 </td>
 <td>
