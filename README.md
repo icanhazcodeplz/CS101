@@ -42,7 +42,7 @@ ___
 
 ___
 ## Topic 11: Arrays
-#### Associated Labs: [lab11Arrays](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11Arrays.java) and [lab11bArrays2d](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11b_arrays2d/lab11bArrays2d.java)
+#### Associated Labs: [lab11a_Arrays](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11a_Arrays.java) and [lab11b_Arrays2d](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11b_Arrays2d.java)
  - [w3 Java Arrays](https://www.w3schools.com/java/java_arrays.asp)
  - [w3 Java Arrays Loop](https://www.w3schools.com/java/java_arrays_loop.asp)
  - [w3 Java Multidimensional Arrays](https://www.w3schools.com/java/java_arrays_multi.asp)
