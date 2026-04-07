@@ -1,67 +1,8 @@
 // TODO: import java.util.ArrayList;
 // TODO: import java.io.File;
 // TODO: import java.util.Scanner;
-public class lab12FileScannerArrayList {
+public class lab12b_FileScanner {
     public static void main(String[] args) throws Exception {
-
-        // ============================
-        // PART 1: ArrayList Basics
-        // ============================
-
-        System.out.println("\n--- Creating an ArrayList ---");
-        // An ArrayList is like an array, but it can grow and shrink in size.
-        // Syntax:
-        //   ArrayList<Type> name = new ArrayList<Type>();
-        //
-        // Note: ArrayLists only work with object types (String, Integer, Double),
-        //       not primitives (int, double). Use `Integer` instead of `int`, etc.
-
-        // 1. Create an ArrayList of Strings called `pokemon` and add the following:
-        //    "Pikachu", "Charmander", "Squirtle"
-        //    Hint: use the .add() method. e.g. pokemon.add("Pikachu");
-
-        // 2. Print the ArrayList
-        //    Hint: you can print an ArrayList directly with System.out.println(pokemon)
-
-        System.out.println("\n--- Accessing and Modifying ---");
-        // 3. Print the first element of `pokemon`
-        //    Hint: use .get(0)
-
-        // 4. Print the size of the ArrayList
-        //    Hint: use .size() (note: this is a method, not a property like array's .length)
-
-        // 5. Change the second element to "Bulbasaur"
-        //    Hint: use .set(1, "Bulbasaur")
-
-        // 6. Print the ArrayList again to see the change
-
-        System.out.println("\n--- Adding and Removing ---");
-        // 7. Add "Eevee" to the end of the list
-
-        // 8. Remove "Squirtle" from the list
-        //    Hint: use .remove("Squirtle")
-
-        // 9. Print the ArrayList and its size
-
-        System.out.println("\n--- Looping Through an ArrayList ---");
-        // 10. Use a for-each loop to print each Pokémon on its own line
-        //     Hint: for (String p : pokemon) { ... }
-
-        // 11. Use a regular for loop (with index) to print each Pokémon with its index
-        //     Expected output: "0: Pikachu", "1: Bulbasaur", etc.
-        //     Hint: loop from i = 0 to i < pokemon.size()
-
-        System.out.println("\n--- Searching an ArrayList ---");
-        // 12. Check if "Eevee" is in the list and print the result
-        //     Hint: use .contains("Eevee") — this returns a boolean
-
-        // 13. Find the index of "Eevee" and print it
-        //     Hint: use .indexOf("Eevee") — returns -1 if not found
-
-
-        // ============================
-        // PART 2: Reading a File into an ArrayList
-        // ============================
 
         System.out.println("\n--- Reading pokemon.txt ---");
         // A Scanner can read from a File just like it reads from System.in.
@@ -94,10 +35,6 @@ public class lab12FileScannerArrayList {
         // 20. Use a for loop to print the last 5 elements of `allPokemon`
         //     Hint: start at allPokemon.size() - 5
 
-
-        // ============================
-        // PART 3: Reading a CSV File
-        // ============================
 
         System.out.println("\n--- Reading pokemon.csv ---");
         // CSVParser.splitCSVLine(line) takes a line from a CSV file and returns

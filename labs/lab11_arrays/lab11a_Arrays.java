@@ -1,5 +1,5 @@
 // TODO: import java.util.Arrays;
-public class lab11Arrays {
+public class lab11a_Arrays {
     public static void main(String[] args) {
 
         System.out.println("\n--- Creating Arrays ---");
