@@ -6,7 +6,7 @@ ___
 
 
 ## Topic 12: ArrayList, File Scanner
-#### Associated Lab: [lab12FileScannerArrayList](https://github.com/icanhazcodeplz/CS101/tree/main/labs/lab12_fileScanner_arrayList)
+#### Associated Labs: [lab13_ArrayList](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab13_arrayList/lab13_ArrayList.java) and [lab14_FileScanner](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab14_fileScanner/lab14_FileScanner.java)
  - [w3 Java ArrayList](https://www.w3schools.com/java/java_arraylist.asp)
  - [w3 Java Files](https://www.w3schools.com/java/java_files_read.asp)
  - [ArrayList in Java Tutorial #36](https://youtu.be/pTAda7qU4LY?si=Csr94zQXCNBkP4M4)
@@ -42,7 +42,7 @@ ___
 
 ___
 ## Topic 11: Arrays
-#### Associated Labs: [lab11a_Arrays](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11a_Arrays.java) and [lab11b_Arrays2d](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11b_Arrays2d.java)
+#### Associated Labs: [lab11_Arrays](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11_Arrays.java) and [lab12_Arrays2d](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab12_arrays2d/lab12_Arrays2d.java)
  - [w3 Java Arrays](https://www.w3schools.com/java/java_arrays.asp)
  - [w3 Java Arrays Loop](https://www.w3schools.com/java/java_arrays_loop.asp)
  - [w3 Java Multidimensional Arrays](https://www.w3schools.com/java/java_arrays_multi.asp)

@@ -1,7 +1,7 @@
 // TODO: import java.util.ArrayList;
 // TODO: import java.io.File;
 // TODO: import java.util.Scanner;
-public class lab12b_FileScanner {
+public class lab14_FileScanner {
     public static void main(String[] args) throws Exception {
 
         System.out.println("\n--- Reading pokemon.txt ---");
@@ -29,10 +29,10 @@ public class lab12b_FileScanner {
         //System.out.println("Total Pokémon loaded: " + allPokemon.size());
 
         System.out.println("\n--- First 5 Pokémon ---");
-        // 19. Use a for loop to print the first 5 elements of `allPokemon`
+        // 19. Use a for-loop to print the first 5 elements of `allPokemon`
 
         System.out.println("\n--- Last 5 Pokémon ---");
-        // 20. Use a for loop to print the last 5 elements of `allPokemon`
+        // 20. Use a for-loop to print the last 5 elements of `allPokemon`
         //     Hint: start at allPokemon.size() - 5
 
 

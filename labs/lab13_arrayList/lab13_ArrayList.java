@@ -1,5 +1,5 @@
 // TODO: import java.util.ArrayList;
-public class lab12FileScannerArrayList {
+public class lab13_ArrayList {
     public static void main(String[] args) throws Exception {
 
         System.out.println("\n--- Creating an ArrayList ---");

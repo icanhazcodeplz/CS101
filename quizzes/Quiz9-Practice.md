@@ -1,7 +1,7 @@
 # CS101 Quiz 9 - Practice - Answers
 ### Covers:
  - [Topic 11: Arrays & Multidimensional Arrays](https://github.com/icanhazcodeplz/CS101)
- - [Lab11-Arrays](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11Arrays.java) and  [Lab11b-Arrays2d](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11b_arrays2d/lab11bArrays2d.java)
+ - [lab11_Arrays](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab11_arrays/lab11_Arrays.java) and [lab12_Arrays2d](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab12_arrays2d/lab12_Arrays2d.java)
  - Any word on the CS101 Github [vocabulary.md](https://github.com/icanhazcodeplz/CS101/blob/main/vocabulary.md)
 
 ### During Quiz
