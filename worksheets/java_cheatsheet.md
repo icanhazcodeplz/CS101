@@ -180,18 +180,12 @@ int[][] grid = {
     {4, 5, 6}
 };
 ```
-
-</td>
-<td>
-
 ### Create empty (fixed size)
 ```java
 int[][] grid = new int[2][3]; // 2 rows, 3 columns
 ```
 
 </td>
-</tr>
-<tr>
 <td>
 
 ### Access / Modify
@@ -203,6 +197,8 @@ grid[0].length   // number of columns
 ```
 
 </td>
+</tr>
+<tr>
 <td>
 
 ### Nested loop
@@ -210,6 +206,19 @@ grid[0].length   // number of columns
 for (int r = 0; r < grid.length; r++) {
     for (int c = 0; c < grid[r].length; c++) {
         System.out.print(grid[r][c] + " ");
+    }
+    System.out.println();
+}
+```
+
+</td>
+<td>
+
+### Nested for-each loop
+```java
+for (int[] row : grid) {
+    for (int val : row) {
+        System.out.print(val + " ");
     }
     System.out.println();
 }
