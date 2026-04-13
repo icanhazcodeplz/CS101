@@ -15,18 +15,17 @@ public class lab14_FileScanner {
 
         // 1. Create a File object for "pokemon.txt"
 
-        // 2. Create a Scanner that reads from the file
+        // 2. Create a Scanner object called `fileScanner` that reads from `file`
 
         // 3. Create a new ArrayList<String> called `allPokemon`
 
         // 4. Use a while loop to read every line from the file and add it to `allPokemon`
         //     Hint: use fileScanner.hasNextLine() and fileScanner.nextLine()
 
-        // 5. Close the Scanner
-        //     Hint: fileScanner.close()
+        // 5. Close the Scanner using `fileScanner.close()`
 
         // TODO: Uncomment the line below
-        //System.out.println("Total Pokémon loaded: " + allPokemon.size());
+        // System.out.println("Total Pokemon loaded: " + allPokemon.size());
 
         System.out.println("\n--- First 5 Pokemon ---");
         // 6. Use a for-loop to print the first 5 elements of `allPokemon`
@@ -56,33 +55,26 @@ public class lab14_FileScanner {
         // 12. Close the Scanner
 
         // TODO: Uncomment the line below
-        //System.out.println("Total Pokémon in CSV: " + names.size());
+        // System.out.println("Total Pokemon in CSV: " + names.size());
 
         System.out.println("\n--- Count Fire Types ---");
-        // 13. Count how many Pokémon have "Fire" somewhere in their type
+        // 13. Count how many Pokemon have "Fire" somewhere in their type
         //     Hint: use a for-each loop and the .contains("Fire") method on each type String
 
-        // TODO: Uncomment the line below
-        //System.out.println("Fire type Pokémon: " + fireCount);
+        // 14. Print "There are <fireCount> fire types", where <fireCount> is the sum you
+        //     found in the previous problem
 
         System.out.println("\n--- Count Gen 1 Pokemon ---");
-        // 14. Count how many Pokémon are from generation 1
-        //     Hint: use .equals("1") to compare Strings
+        // 15. Count how many Pokemon are from generation 1
+        //     Hint: `generations` is an Array of strings, so use Integer.parseInt to convert
+        //           to an int.
 
+        // 16. Print "There are <gen1Count> gen 1 pokemon", where <gen1Count> is the sum you
+        //     found in the previous problem
+
+        // 5% EXTRA CREDIT: Print the total number of Pokémon in each generation (1-9).
         // TODO: Uncomment the line below
-        //System.out.println("Gen 1 Pokémon: " + gen1Count);
-
-        System.out.println("\n--- Find a Pokemon ---");
-        // 15. Search for "Pikachu" in the `names` ArrayList.
-        //     If found, print its name, type, and generation.
-        //     Hint: use .indexOf("Pikachu") to get the index, then use that
-        //           index to look up the type and generation from the other ArrayLists.
-
-        System.out.println("\n--- EXTRA CREDIT: Most Common Type ---");
-        // 5% EXTRA CREDIT: Find and print which single type (e.g. "Water", "Fire", "Grass")
-        //     appears most often. For dual types like "Water/Flying", count both
-        //     "Water" and "Flying" separately.
-        //     Hint: You could use .split("/") to break dual types into individual types.
+        // System.out.println("\n--- EXTRA CREDIT: Pokemon Per Generation ---");
 
     }
 }

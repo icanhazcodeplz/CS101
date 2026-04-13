@@ -252,7 +252,7 @@ names.get(0);            // access by index
 names.set(0, "Bob");     // change element
 names.remove("Alice");   // remove by value
 names.size();            // number of elements
-names.contains("Bob");   // check if exists
+names.contains("Bob");   // check if exists. Returns boolean
 ```
 
 </td>

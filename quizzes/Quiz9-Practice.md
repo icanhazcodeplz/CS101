@@ -103,25 +103,7 @@ System.out.println(grid[1][2]);
 
 ---
 
-**7. What does this code print?**
-```java
-int[][] grid = {
-    {10, 20},
-    {30, 40},
-    {50, 60}
-};
-System.out.println(grid.length + " " + grid[0].length);
-```
-- A) `2 2`
-- B) `2 3`
-- *answer* **C) `3 2`**
-- D) `6 2`
-
-> **Rationale:** `grid.length` is the number of rows (3). `grid[0].length` is the number of columns in the first row (2). Think of it as: the outer array has 3 elements, and each inner array has 2 elements.
-
----
-
-**8. Define "Index":**
+**7. Define "Index":**
 
 - A) The total number of elements in an array
 - B) The data type of elements stored in an array
