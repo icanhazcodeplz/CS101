@@ -13,26 +13,26 @@ public class lab14_FileScanner {
         //       String line = fileScanner.nextLine();
         //   }
 
-        // 14. Create a File object for "pokemon.txt"
+        // 1. Create a File object for "pokemon.txt"
 
-        // 15. Create a Scanner that reads from the file
+        // 2. Create a Scanner that reads from the file
 
-        // 16. Create a new ArrayList<String> called `allPokemon`
+        // 3. Create a new ArrayList<String> called `allPokemon`
 
-        // 17. Use a while loop to read every line from the file and add it to `allPokemon`
+        // 4. Use a while loop to read every line from the file and add it to `allPokemon`
         //     Hint: use fileScanner.hasNextLine() and fileScanner.nextLine()
 
-        // 18. Close the Scanner
+        // 5. Close the Scanner
         //     Hint: fileScanner.close()
 
         // TODO: Uncomment the line below
         //System.out.println("Total Pokémon loaded: " + allPokemon.size());
 
-        System.out.println("\n--- First 5 Pokémon ---");
-        // 19. Use a for-loop to print the first 5 elements of `allPokemon`
+        System.out.println("\n--- First 5 Pokemon ---");
+        // 6. Use a for-loop to print the first 5 elements of `allPokemon`
 
-        System.out.println("\n--- Last 5 Pokémon ---");
-        // 20. Use a for-loop to print the last 5 elements of `allPokemon`
+        System.out.println("\n--- Last 5 Pokemon ---");
+        // 7. Use a for-loop to print the last 5 elements of `allPokemon`
         //     Hint: start at allPokemon.size() - 5
 
 
@@ -43,37 +43,37 @@ public class lab14_FileScanner {
         //   index 1: type (e.g. "Fire" or "Water/Flying")
         //   index 2: generation (e.g. "1")
 
-        // 21. Create a File object for "pokemon.csv" and a Scanner to read it
+        // 8. Create a File object for "pokemon.csv" and a Scanner to read it
 
-        // 22. Skip the header row
+        // 9. Skip the header row
         //     Hint: call .nextLine() once before the loop
 
-        // 23. Create three ArrayLists: `names` (String), `types` (String), `generations` (String)
+        // 10. Create three ArrayLists: `names` (String), `types` (String), `generations` (String)
 
-        // 24. Use a while loop to read each line, split it with CSVParser.splitCSVLine(),
+        // 11. Use a while loop to read each line, split it with CSVParser.splitCSVLine(),
         //     and add each column to the appropriate ArrayList
 
-        // 25. Close the Scanner
+        // 12. Close the Scanner
 
         // TODO: Uncomment the line below
         //System.out.println("Total Pokémon in CSV: " + names.size());
 
         System.out.println("\n--- Count Fire Types ---");
-        // 26. Count how many Pokémon have "Fire" somewhere in their type
+        // 13. Count how many Pokémon have "Fire" somewhere in their type
         //     Hint: use a for-each loop and the .contains("Fire") method on each type String
 
         // TODO: Uncomment the line below
         //System.out.println("Fire type Pokémon: " + fireCount);
 
-        System.out.println("\n--- Count Gen 1 Pokémon ---");
-        // 27. Count how many Pokémon are from generation 1
+        System.out.println("\n--- Count Gen 1 Pokemon ---");
+        // 14. Count how many Pokémon are from generation 1
         //     Hint: use .equals("1") to compare Strings
 
         // TODO: Uncomment the line below
         //System.out.println("Gen 1 Pokémon: " + gen1Count);
 
-        System.out.println("\n--- Find a Pokémon ---");
-        // 28. Search for "Pikachu" in the `names` ArrayList.
+        System.out.println("\n--- Find a Pokemon ---");
+        // 15. Search for "Pikachu" in the `names` ArrayList.
         //     If found, print its name, type, and generation.
         //     Hint: use .indexOf("Pikachu") to get the index, then use that
         //           index to look up the type and generation from the other ArrayLists.

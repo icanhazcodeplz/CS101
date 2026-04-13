@@ -30,8 +30,11 @@ public class lab13_ArrayList {
         //     Hint: for (String p : pokemon) { ... }
 
         // 11. Use a regular for loop (with index) to print each Pokémon with its index
-        //     Expected output: "0: Pikachu", "1: Bulbasaur", etc.
         //     Hint: loop from i = 0 to i < pokemon.size()
+        //     Expected output:
+        //              0: Pikachu
+        //              1: Bulbasaur
+        //              2: Squirtle
 
         System.out.println("\n--- Searching an ArrayList ---");
         // 12. Check if "Eevee" is in the list and print the result
