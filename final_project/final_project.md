@@ -2,12 +2,41 @@
 
 The final project is worth 20% of your overall grade. It is split into three sections, with a total of 100 points available:
 
+### Requirements 
+- [ ] Program compiles and runs without errors
+- [ ] Uses at least two of: if/else, for-loops, while-loops, methods, arrays/ArrayLists
+- [ ] Does not require an internet connection
+- [ ] Does not store user data between sessions
+- [ ] If Android App: single screen only
+- [ ] Code includes comments explaining each section
+- [ ] App is self-explanatory for a new user
+
 ## 1. (10pts) [Project Proposal](https://github.com/icanhazcodeplz/CS101/blob/main/final_project/1-Project-Proposal.pdf) - Due In Class April 7
 
-## 2. (20pts) Prototype Demo - During class May 7
+## 2. (15pts) Prototype Demo - During Class May 7
 
-Details Forthcoming 
+Present your app on the big screen. Have at least part of it working and be ready to explain what's left to finish.
 
-## 3. (70pts) Final Project - Due May 21
+### Prototype Demo Grading Rubric
 
-Details Forthcoming 
+| Category | Points | Description |
+|----------|--------|-------------|
+| **Compiles** | 5 | Program compiles and runs |
+| **Partial functionality** | 5 | At least part of the app works |
+| **Explain what's left** | 5 | Can describe remaining features to implement |
+
+If you are unable to demo on May 7th for whatever reason, you can demo on May 12th, but your maximum score will be 10 points instead of 15.
+
+
+## 3. (75pts) Final Project - Due May 21 (No late submissions)
+
+
+### Final Project Grading Rubric
+
+| Category            | Points | Description                                                                                                                                  |
+|---------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| **Functionality**   | 25     | The program runs without errors and behaves as described in your proposal. Inputs produce the expected outputs.                              |
+| **Java Concepts**   | 20     | Uses at least **two** of the following correctly: `if/else` statements, `for`-loops, `while`-loops, methods, arrays/ArrayLists. (10pts each) |
+| **User Experience** | 15     | The "my sibling could use it" test: A new user can understand how to use the app and what it does without instructions from you.             |
+| **Code Quality**    | 15     | Code is organized, readable, and uses meaningful variable names. Includes comments explaining what each section does.                        |
+

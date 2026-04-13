@@ -92,4 +92,5 @@
 - **Array**: A fixed-size data structure that holds multiple values of the same type. e.g. `int[] numbers = {10, 20, 30};` creates an array of three integers.
 - **Index**: The position of an element in an array, starting at 0. e.g. in `{10, 20, 30}`, index 0 is `10`, index 1 is `20`, index 2 is `30`.
 - **Element**: A single value stored at a specific index in an array. e.g. in `int[] nums = {10, 20, 30};`, `20` is the element at index 1.
+- **ArrayList**: A resizable collection of objects that can grow and shrink as elements are added or removed.
 
