@@ -16,14 +16,14 @@ public class lab13_ArrayList {
 
         // 5. Change the second element to "Bulbasaur"
 
-        // 6. Print the ArrayList again to see the change
+        // 6. Print the ArrayList again to see the change. Should be [Pikachu, Bulbasaur, Squirtle]
 
         System.out.println("\n--- Adding and Removing ---");
-        // 7. Add "Eevee" to the end of the list
+        // 7. Add "Eevee" and "Poliwag" to the end of the list
 
         // 8. Remove "Squirtle" from the list
 
-        // 9. Print the ArrayList
+        // 9. Print the ArrayList. Should be [Pikachu, Bulbasaur, Eevee, Poliwag]
 
         System.out.println("\n--- Looping Through an ArrayList ---");
         // 10. Use a for-each loop to print each Pokémon on its own line
@@ -34,11 +34,11 @@ public class lab13_ArrayList {
         //     Expected output:
         //              0: Pikachu
         //              1: Bulbasaur
-        //              2: Squirtle
+        //              2: Eevee
+        //              3: Poliwag
 
         System.out.println("\n--- Searching an ArrayList ---");
-        // 12. Check if "Eevee" is in the list and print the result
-        //     Hint: use .contains("Eevee") — this returns a boolean
+        // 12. Check if "Eevee" is in the list using the "contains" method and print the result (True or False)
 
     }
 }
