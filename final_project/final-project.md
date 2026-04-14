@@ -14,15 +14,16 @@ The final project is worth 20% of your overall grade. It is split into three sec
 
 ## 2. (15pts) Prototype Demo - During Class May 7
 
-Present your app on the big screen. Have at least part of it working and be ready to explain what's left to finish.
+Present your app on the big screen. Have at least part of it working and be ready to explain what's left to finish. 
+This is an opportunity to get feedback from your peers about how to update/improve your app.
 
 ### Prototype Demo Grading Rubric
 
-| Category | Points | Description |
-|----------|--------|-------------|
-| **Compiles** | 5 | Program compiles and runs |
-| **Partial functionality** | 5 | At least part of the app works |
-| **Explain what's left** | 5 | Can describe remaining features to implement |
+| Category                  | Points | Description                                  |
+|---------------------------|--------|----------------------------------------------|
+| **Partial functionality** | 5 | At least part of the app works               |
+| **Explain what's left**   | 5 | Can describe remaining features to implement |
+| **Feedback for Others**   | 5 | Complete feedback forms for your peers       |
 
 If you are unable to demo on May 7th for whatever reason, you can demo on May 12th, but your maximum score will be 10 points instead of 15.
 
