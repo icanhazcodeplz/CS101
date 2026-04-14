@@ -247,12 +247,12 @@ ArrayList<String> names = new ArrayList<String>();
 
 ### Common methods
 ```java
-names.add("Alice");      // add to end
-names.get(0);            // access by index
-names.set(0, "Bob");     // change element
-names.remove("Alice");   // remove by value
-names.size();            // number of elements
-names.contains("Bob");   // check if exists. Returns boolean
+names.add("Alice");    // add to end
+names.get(0);          // access by index
+names.set(0, "Bob");   // change element
+names.remove("Alice"); // remove by value
+names.size();          // number of elements
+names.contains("Bob"); // check if exists. Returns bool
 ```
 
 </td>
