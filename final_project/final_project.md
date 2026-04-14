@@ -3,7 +3,6 @@
 The final project is worth 20% of your overall grade. It is split into three sections, with a total of 100 points available:
 
 ### Requirements 
-- [ ] Program compiles and runs without errors
 - [ ] Uses at least two of: if/else, for-loops, while-loops, methods, arrays/ArrayLists
 - [ ] Does not require an internet connection
 - [ ] Does not store user data between sessions
@@ -34,9 +33,11 @@ If you are unable to demo on May 7th for whatever reason, you can demo on May 12
 ### Final Project Grading Rubric
 
 | Category            | Points | Description                                                                                                                                  |
-|---------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| **Functionality**   | 25     | The program runs without errors and behaves as described in your proposal. Inputs produce the expected outputs.                              |
-| **Java Concepts**   | 20     | Uses at least **two** of the following correctly: `if/else` statements, `for`-loops, `while`-loops, methods, arrays/ArrayLists. (10pts each) |
-| **User Experience** | 15     | The "my sibling could use it" test: A new user can understand how to use the app and what it does without instructions from you.             |
-| **Code Quality**    | 15     | Code is organized, readable, and uses meaningful variable names. Includes comments explaining what each section does.                        |
+|---------------------|-------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| **Compiles**        | 5     | Program compiles and runs without errors.                                                                                                    |
+| **Functionality**   | 20    | Program runs as described in your proposal. Inputs produce the expected outputs.                                                             |
+| **Java Concepts**   | 20    | Uses at least **two** of the following correctly: `if/else` statements, `for`-loops, `while`-loops, methods, arrays/ArrayLists. (10pts each) |
+| **User Experience** | 15    | The "my friend could use it" test: A new user can understand how to use the app and what it does without instructions from you.              |
+| **Code Quality**    | 10    | Code is organized and readable.                                                                                                              |
+| **Code Comments**   | 5     | Code includes comments explaining what each section does.                                                                                    |
 
