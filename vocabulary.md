@@ -36,6 +36,7 @@
 - **ASCII**: A character encoding that represents 128 characters (letters, digits, symbols) using 7 bits
 - **Unicode**: A universal character encoding standard that supports characters from all writing systems worldwide, including emojis; extends beyond ASCII's 128 characters with capacity for over 1 million representations (currently only 160,000 in use).
 - **RGB**: Red, Green, Blue; a color model where colors are created by combining different intensities of red, green, and blue light (each 0-255)
+- **CSV**: Comma-Separated Values; a plain-text file format where each line is a row and fields within a row are separated by commas. e.g. `name,age,city\nAlice,30,Denver`. 
 
 ## Variables & Operations
 - **Declaration**: Defining a variable's name and type, with or without an initial assignment. e.g. `int x;` or `int x = 5;`
@@ -62,6 +63,7 @@
 - **Dynamically Typed**: A language where variable types are determined at runtime rather than compile time. A variable can hold different types of values throughout its lifetime. Python, JavaScript, and Ruby are dynamically typed — e.g. in Python, `x = 5` then `x = "hello"` is perfectly valid.
 - **Hard-coded**: A value written directly into the source code rather than being computed, passed in, or read from input. e.g. `int max = 100;` hard-codes the maximum to `100` instead of letting the user provide it.
 - **Scope**: The region of code where a variable exists and can be accessed. A variable declared inside a block (between `{ }`) is only accessible within that block. e.g. a variable declared inside a `for` loop cannot be used outside of it.
+- **Case-Sensitive**: Treating uppercase and lowercase letters as different characters. e.g. in programming, `myVar` and `myvar` are two distinct variable names.
 
 ## Compiled and Interpreted
 - **Compiler**: Program that translates the entire code base into machine code or bytecode.
