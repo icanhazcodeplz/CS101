@@ -252,7 +252,42 @@ names.get(0);          // access by index
 names.set(0, "Bob");   // change element
 names.remove("Alice"); // remove by value
 names.size();          // number of elements
-names.contains("Bob"); // check if exists. Returns bool
+names.contains("Bob"); // check if exists
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+### String Methods
+
+<table>
+<tr>
+<td>
+
+```java
+s.equals("hi")           // true if same text
+s.equalsIgnoreCase("Hi") // ignores case
+s.length()               // number of characters
+s.isEmpty()              // true if ""
+s.contains("fox")        // true if found
+s.toUpperCase()          // "Hello" --> "HELLO"
+s.toLowerCase()          // "Hello" --> "hello"
+```
+
+</td>
+<td>
+
+```java
+s.trim()            // remove leading/trailing spaces
+s.startsWith("The") // true if starts with "The"
+s.endsWith("dog")   // true if ends with "dog"
+s.replace("a", "b") // replace all "a" with "b"
+
+// "a,b,c" → {"a", "b", "c"}
+String[] parts = s.split(","); 
 ```
 
 </td>

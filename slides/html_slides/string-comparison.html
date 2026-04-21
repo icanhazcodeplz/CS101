@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>String Comparison in Java</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f0ede8;
+    --card-bg: #faf9f7;
+    --green: #2e7d52;
+    --red: #c0392b;
+    --blue: #1a6ea8;
+    --text: #1a1a1a;
+    --muted: #888078;
+    --border: #ddd9d2;
+    --accent-green: rgba(46,125,82,0.07);
+    --accent-red: rgba(192,57,43,0.07);
+    --accent-blue: rgba(26,110,168,0.06);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-ligatures: none;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 1200px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.06);
+    animation: fadeUp 0.5s ease forwards;
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .slide::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, var(--blue) 50%, var(--green) 50%);
+  }
+
+  .slide-header {
+    padding: 20px 52px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .slide-header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(40px, 5.5vw, 68px);
+    letter-spacing: 4px;
+    line-height: 1;
+    color: var(--text);
+  }
+
+  .slide-header h1 .accent { color: var(--blue); }
+
+  .slide-header .subtitle {
+    font-size: 20px;
+    color: var(--muted);
+    margin-top: 8px;
+    font-weight: 400;
+  }
+
+  .slide-body {
+    padding: 36px 52px 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  /* --- Definition banner --- */
+  .definition {
+    background: var(--accent-blue);
+    border: 1px solid rgba(26,110,168,0.15);
+    border-radius: 6px;
+    padding: 20px 28px;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    animation: rowIn 0.35s ease 0.08s both;
+  }
+
+  .definition .term {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--blue);
+    white-space: nowrap;
+    letter-spacing: 1px;
+  }
+
+  .definition .meaning {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+
+  /* --- Syntax banner --- */
+  .syntax-block {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    animation: rowIn 0.35s ease 0.12s both;
+  }
+
+  .syntax-label {
+    padding: 10px 18px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--blue);
+    background: var(--accent-blue);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .syntax-code {
+    padding: 16px 20px;
+    font-size: 16px;
+    line-height: 1.7;
+    white-space: pre;
+    color: var(--text);
+    background: var(--card-bg);
+    overflow-x: auto;
+  }
+
+  .syntax-note {
+    padding: 10px 20px 14px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    background: rgba(0,0,0,0.015);
+  }
+
+  .syntax-note ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .syntax-note ul li {
+    padding: 2px 0;
+  }
+
+  .syntax-note ul li::before {
+    content: '\2192  ';
+    color: var(--blue);
+    font-weight: 700;
+  }
+
+  .section-divider {
+    grid-column: 1 / -1;
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 4px 0;
+  }
+
+  /* --- Examples grid --- */
+  .examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .example-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    animation: rowIn 0.35s ease both;
+  }
+
+  .example-card:nth-child(1) { animation-delay: 0.12s; }
+  .example-card:nth-child(2) { animation-delay: 0.20s; }
+  .example-card:nth-child(3) { animation-delay: 0.28s; }
+  .example-card:nth-child(4) { animation-delay: 0.36s; }
+  .example-card:nth-child(5) { animation-delay: 0.44s; }
+  .example-card:nth-child(6) { animation-delay: 0.52s; }
+
+  @keyframes rowIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .example-label {
+    padding: 10px 18px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .example-label .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .example-label.good { color: var(--green); background: var(--accent-green); }
+  .example-label.good .dot { background: var(--green); }
+  .example-label.info { color: var(--blue); background: var(--accent-blue); }
+  .example-label.info .dot { background: var(--blue); }
+  .example-label.bad  { color: var(--red);   background: var(--accent-red); }
+  .example-label.bad .dot  { background: var(--red); }
+
+  .example-code {
+    padding: 16px 20px;
+    font-size: 16px;
+    line-height: 1.7;
+    white-space: pre;
+    color: var(--text);
+    background: var(--card-bg);
+    overflow-x: auto;
+  }
+
+  .example-code .kw  { color: var(--blue); font-weight: 700; }
+  .example-code .err { color: var(--red); font-weight: 700; }
+  .example-code .ok  { color: var(--green); font-weight: 700; }
+  .example-code .cmt { color: var(--muted); font-weight: 400; }
+  .example-code .str { color: #b5651d; }
+
+  .example-note {
+    padding: 10px 20px 14px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    background: rgba(0,0,0,0.015);
+  }
+
+  /* --- Vocab section --- */
+  .vocab {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    animation: rowIn 0.35s ease 0.5s both;
+  }
+
+  .vocab-item {
+    background: var(--accent-blue);
+    border: 1px solid rgba(26,110,168,0.12);
+    border-radius: 6px;
+    padding: 14px 20px;
+  }
+
+  .vocab-item .vocab-term {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--blue);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .vocab-item .vocab-def {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text);
+    margin-top: 4px;
+  }
+
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="slide-header">
+    <h1><span class="accent">String</span> Comparison in Java</h1>
+  </div>
+
+  <div class="slide-body">
+
+    <div class="definition">
+      <span class="meaning">Always use <code>.equals()</code> to compare Strings in Java. The <code>==</code> operator compares <strong>memory addresses</strong> (references), not the actual text content.</span>
+    </div>
+
+    <!-- The problem -->
+    <div class="syntax-block">
+      <div class="syntax-label">Why == Fails</div>
+      <div class="syntax-code"><span class="kw">String</span> a = <span class="str">"Hello"</span>;
+<span class="kw">String</span> b = <span class="kw">new</span> String(<span class="str">"Hello"</span>);
+
+System.out.println(a == b);      <span class="err">// false &mdash; different objects in memory</span>
+System.out.println(a.equals(b)); <span class="ok">// true  &mdash; same characters inside</span></div>
+      <div class="syntax-note">
+        <ul>
+          <li><code>==</code> asks: "Are these the <strong>same object</strong> in memory?"</li>
+          <li><code>.equals()</code> asks: "Do these contain the <strong>same text</strong>?"</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Examples -->
+    <div class="examples">
+
+      <!-- The tricky case -->
+      <div class="example-card">
+        <div class="example-label bad"><span class="dot"></span>Tricky!   == Sometimes Works</div>
+        <div class="example-code"><span class="kw">String</span> x = <span class="str">"Hello"</span>;
+<span class="kw">String</span> y = <span class="str">"Hello"</span>;
+
+System.out.println(x == y); <span class="ok">// true!</span></div>
+        <div class="example-note">Java <strong>interns</strong> identical string literals, reusing the same object. This makes <code>==</code> appear to work &mdash; but it's unreliable.</div>
+      </div>
+
+      <!-- When it breaks -->
+      <div class="example-card">
+        <div class="example-label bad"><span class="dot"></span>When == Breaks</div>
+        <div class="example-code"><span class="cmt">// User input, concatenation, or new String()</span>
+<span class="cmt">// all create NEW objects in memory</span>
+
+Scanner sc = <span class="kw">new</span> Scanner(System.in);
+<span class="kw">String</span> input = sc.nextLine();
+<span class="cmt">// Even if user types "Hello":</span>
+<span class="str">"Hello"</span> == input  <span class="err">// false!</span></div>
+        <div class="example-note">Strings from user input, <code>new String()</code>, or concatenation are different objects &mdash; <code>==</code> will return <code>false</code>.</div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- .equals() -->
+      <div class="example-card">
+        <div class="example-label good"><span class="dot"></span>.equals() &mdash; Correct Way</div>
+        <div class="example-code"><span class="kw">String</span> a = <span class="str">"Hello"</span>;
+<span class="kw">String</span> b = <span class="str">"hello"</span>;
+
+a.equals(b)           <span class="err">// false (case sensitive)</span>
+a.equalsIgnoreCase(b) <span class="ok">// true</span></div>
+        <div class="example-note"><code>.equals()</code> is case-sensitive. Use <code>.equalsIgnoreCase()</code> when casing doesn't matter.</div>
+      </div>
+
+      <!-- Primitives vs Objects -->
+      <div class="example-card">
+        <div class="example-label info"><span class="dot"></span>Why the Difference?</div>
+        <div class="example-code"><span class="cmt">// Primitives store VALUES directly</span>
+<span class="kw">int</span> a = 5;
+<span class="kw">int</span> b = 5;
+a == b  <span class="ok">// true &mdash; compares values</span>
+
+<span class="cmt">// Strings are OBJECTS (references)</span>
+<span class="kw">String</span> x = <span class="str">"Hi"</span>;
+<span class="kw">String</span> y = <span class="str">"Hi"</span>;
+x == y  <span class="err">// compares references, NOT text</span></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
