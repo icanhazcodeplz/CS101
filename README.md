@@ -5,6 +5,32 @@ ___
 
 
 
+## Topic 13: String Methods
+#### Associated Lab: [lab15_StringComparison](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab15_string_comparison/lab15_StringComparison.java)
+ - [w3 Java Strings](https://www.w3schools.com/java/java_strings.asp)
+ - [w3 Java String Methods](https://www.w3schools.com/java/java_ref_string.asp)
+
+> Always use `.equals()` to compare Strings in Java — never `==`.
+> `==` compares memory references, not text content.
+>
+> Common String methods:
+> ```java
+>  s.equals("hi")           // true if same text
+>  s.equalsIgnoreCase("Hi") // ignores case
+>  s.length()               // number of characters
+>  s.isEmpty()              // true if ""
+>  s.contains("fox")        // true if found
+>  s.startsWith("The")      // true if starts with
+>  s.endsWith("dog")        // true if ends with
+>  s.toUpperCase()          // "HELLO"
+>  s.toLowerCase()          // "hello"
+>  s.replace("a", "b")     // replace all "a" with "b"
+>  s.trim()                 // remove leading/trailing spaces
+>  String[] parts = s.split(","); // split into array
+> ```
+> **Note:** String methods return new Strings — they do not change the original.
+
+___
 ## Topic 12: ArrayList, File Scanner
 #### Associated Labs: [lab13_ArrayList](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab13_arrayList/lab13_ArrayList.java) and [lab14_FileScanner](https://github.com/icanhazcodeplz/CS101/blob/main/labs/lab14_fileScanner/lab14_FileScanner.java)
  - [w3 Java ArrayList](https://www.w3schools.com/java/java_arraylist.asp)
