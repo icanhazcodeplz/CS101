@@ -1,4 +1,4 @@
-public class lab15_StringComparison {
+public class lab15_StringMethods {
     public static void main(String[] args) throws Exception {
 
         System.out.println("\n--- Comparing Strings ---");
