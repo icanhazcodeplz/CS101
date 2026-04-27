@@ -15,6 +15,8 @@ boolean result = a || b;
 - C) `"true"`
 - D) Compiler error
 
+> **Rationale:** `||` (OR) returns `true` if at least one operand is true. Since `b` is `true`, `a || b` is `true`.
+
 ---
 
 **2. (1pt) What is the value of `result`?**
@@ -26,6 +28,8 @@ boolean result = !isCold;
 - B) `false`
 - C) `"notCold"`
 - D) Compiler error
+
+> **Rationale:** `!` (NOT) flips the boolean. `!false` is `true`.
 
 ---
 
@@ -39,6 +43,8 @@ System.out.println(x > y);
 - B) `false`
 - C) `8`
 - D) Compiler error
+
+> **Rationale:** 8 is greater than 3, so `x > y` evaluates to `true`.
 
 ---
 
@@ -58,6 +64,8 @@ if (temp > 50.0) {
 - C) `freezing`
 - D) `warm` and `cool`
 
+> **Rationale:** `49.9 > 50.0` is false, so the first branch is skipped. `49.9 > 32.0` is true, so `"cool"` is printed and the rest of the chain is skipped.
+
 ---
 
 **5. (1pt) What does this code print?**
@@ -71,6 +79,8 @@ System.out.println(result);
 - B) `false`
 - C) `5`
 - D) Compiler error
+
+> **Rationale:** `(3 < 5)` is `true` and `(5 != 3)` is `true`. `true && true` is `true`.
 
 ---
 
@@ -92,6 +102,8 @@ if (x >= 12) {
 - *answer* **C) "a b c "**
 - D) "b "
 
+> **Rationale:** These are three separate (non-else-if) conditions, each checked independently. `12 >= 5` is true, `12 <= 15` is true, and `12 >= 12` is true, so all three branches print.
+
 ---
 
 
@@ -104,6 +116,8 @@ int result = 12 - 3 * 2 + 1;
 - C) 1
 - D) 5
 
+> **Rationale:** Multiplication happens before addition/subtraction: `3 * 2 = 6`. Then left to right: `12 - 6 + 1 = 7`.
+
 ---
 
 **8. (1pt) What is the value of `result`?**
@@ -114,6 +128,8 @@ double result = 18.0 / 3 / 2;
 - *answer* **B) `3.0`**
 - C) `3`
 - D) `9.0`
+
+> **Rationale:** Division is left-to-right: `18.0 / 3 = 6.0`, then `6.0 / 2 = 3.0`.
 
 ---
 
@@ -126,6 +142,8 @@ boolean result = 3 * 3 == 9 && 2 + 1 > 5;
 - C) `9`
 - D) Compiler error
 
+> **Rationale:** `3 * 3 == 9` is `true`, but `2 + 1 > 5` is `3 > 5` which is `false`. `true && false` is `false`.
+
 ---
 
 **10. (1pt) Define Vacuum Tube**:
@@ -134,5 +152,7 @@ boolean result = 3 * 3 == 9 && 2 + 1 > 5;
 - B) A programming language used to write machine code
 - *answer* **C) An early electronic component used in first-generation computers to switch and amplify electrical signals**
 - D) A type of memory that stores data permanently
+
+> **Rationale:** Vacuum tubes were used in first-generation computers (like ENIAC) to switch and amplify electrical signals. They were later replaced by much smaller and more efficient transistors.
 
 ---

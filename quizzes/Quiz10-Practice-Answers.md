@@ -106,3 +106,5 @@ System.out.println(fruits.contains("orange"));
 - C) A method that reads data from a file
 - D) A type of loop used to iterate over collections
 
+> **Rationale:** Unlike a regular array (fixed size), an ArrayList can grow and shrink dynamically. You can add or remove elements at any time using `.add()`, `.remove()`, etc.
+

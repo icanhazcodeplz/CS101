@@ -126,4 +126,6 @@ public static void main(String[] args) {
 - *answer* **C) A variable listed in a method's definition that acts as a placeholder**
 - D) A named, reusable block of code that performs a specific task
 
+> **Rationale:** A parameter is the variable named in the method signature (e.g., `int miles` in `milesToFeet(int miles)`). An argument is the actual value passed when the method is called. Parameters act as placeholders until the method is invoked.
+
 ---

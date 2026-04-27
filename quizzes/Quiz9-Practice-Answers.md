@@ -110,3 +110,5 @@ System.out.println(grid[1][2]);
 - *answer* **C) The position number used to access an element in an array, starting at 0**
 - D) The value stored at a specific position in an array
 
+> **Rationale:** An index is the numeric position used to access an element. Arrays are zero-indexed, so the first element is at index 0, the second at index 1, and so on.
+

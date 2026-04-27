@@ -107,3 +107,5 @@ System.out.println(sports.contains("tennis"));
 - C) Splitting a String into an array of smaller Strings
 - *answer* **D) Joining two or more strings together using the `+` operator**
 
+> **Rationale:** Concatenation combines strings: `"Hello" + " " + "World"` produces `"Hello World"`. Java also auto-converts numbers to strings during concatenation, e.g., `"Score: " + 10` produces `"Score: 10"`.
+

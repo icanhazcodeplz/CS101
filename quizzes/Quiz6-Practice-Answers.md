@@ -25,6 +25,8 @@ boolean result = a || b && c;
 - C) `"true"`
 - D) Compiler error
 
+> **Rationale:** `&&` has higher precedence than `||`. `b && c` = `true && true` = `true`. Then `a || true` = `false || true` = `true`.
+
 ---
 
 **2. (1pt) What is the value of `result`?**
@@ -38,6 +40,8 @@ boolean result = !(x && y);
 - C) `1`
 - D) Compiler error
 
+> **Rationale:** `true && false` = `false`. `!false` = `true`.
+
 ---
 
 
@@ -50,6 +54,8 @@ boolean result = (5 > 3) && (x > 1) || !(x == 6);
 - B) `false`
 - C) `6`
 - D) Compiler error
+
+> **Rationale:** `(5>3) && (6>1)` = `true && true` = `true`. Since the left side of `||` is `true`, the result is `true` without evaluating the right side.
 
 ---
 
@@ -71,6 +77,8 @@ if (score >= 10) {
 - C) `b c`
 - D) `b c d`
 
+> **Rationale:** `8 >= 10` is false. `8 < 9` is true, so `"b "` is printed and the chain exits. The `score <= 8` branch is never reached.
+
 ---
 
 **5. (2pts) What does this code print?**
@@ -90,6 +98,8 @@ if (isRaining && hasUmbrella) {
 - C) `Not raining`
 - D) `Stay dry` and `Get soggy`
 
+> **Rationale:** `true && false` = `false` (first branch skipped). `true && !false` = `true && true` = `true`, so `"Get soggy"` prints.
+
 ---
 
 **6. (2pts) What does this code print?**
@@ -103,6 +113,8 @@ for (int i = 0; i < 4; i++) {
 - C) `0 1 2 3 4 `
 - D) `1 2 3 `
 
+> **Rationale:** The loop starts at `i = 0` and runs while `i < 4`, printing 0, 1, 2, 3. When `i` becomes 4, `4 < 4` is false and 4 is not printed.
+
 ---
 
 
@@ -112,5 +124,7 @@ for (int i = 0; i < 4; i++) {
 - B) Code that contains syntax errors
 - *answer* **C) An informal, human-readable description of a program's logic using plain language rather than actual programming syntax**
 - D) Comments inside a Java program
+
+> **Rationale:** Pseudocode lets you plan the logic of a program using plain English-like steps without worrying about exact Java syntax. It's a planning tool, not real code.
 
 ---

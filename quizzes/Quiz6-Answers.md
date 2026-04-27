@@ -24,6 +24,8 @@ boolean result = a && b && c;
 - C) `"false"`
 - D) Compiler error
 
+> **Rationale:** `&&` requires all operands to be true. Since `b` is `false`, the entire expression is `false`.
+
 ---
 
 **2. (1pt) What is the value of `result`?**
@@ -37,6 +39,8 @@ boolean result = !(x || y);
 - C) `!true`
 - D) Compiler error
 
+> **Rationale:** `false || false` is `false`, and `!false` is `true`.
+
 ---
 
 
@@ -49,6 +53,8 @@ boolean result = (7 > 3) && (x < 2) || !(x == 5);
 - B) `false`
 - C) `4`
 - D) Compiler error
+
+> **Rationale:** `&&` has higher precedence than `||`. `(7>3) && (4<2)` = `true && false` = `false`. `!(4==5)` = `!false` = `true`. `false || true` = `true`.
 
 ---
 
@@ -70,6 +76,8 @@ if (score >= 20) {
 - *answer* **C) `c`**
 - D) `c d`
 
+> **Rationale:** `15 >= 20` is false. `15 < 15` is false. `15 <= 15` is true, so `"c "` is printed and the chain exits.
+
 ---
 
 **5. (2pts) What does this code print?**
@@ -89,6 +97,8 @@ if (isCold && hasJacket) {
 - *answer* **C) `Not cold`**
 - D) `Stay warm` and `Get chilly`
 
+> **Rationale:** `false && true` = `false` (first branch skipped). `false && false` = `false` (second branch skipped). Falls through to else: `"Not cold"`.
+
 ---
 
 **6. (2pts) What does this code print?**
@@ -102,6 +112,8 @@ for (int i = 1; i <= 4; i++) {
 - *answer* **C) `1 2 3 4 `**
 - D) `0 1 2 3 4`
 
+> **Rationale:** The loop starts at `i = 1` and runs while `i <= 4`, printing 1, 2, 3, 4. When `i` becomes 5, the condition is false and the loop stops.
+
 ---
 
 
@@ -111,5 +123,7 @@ for (int i = 1; i <= 4; i++) {
 - B) A type of vacuum tube used in early computers
 - C) A programming language used to control hardware
 - *answer* **D) A material that can sometimes conduct electricity and sometimes resist it, used as the basis for transistors**
+
+> **Rationale:** Semiconductors (like silicon) have controllable conductivity. This property makes transistors — and therefore all modern computer chips — possible.
 
 ---

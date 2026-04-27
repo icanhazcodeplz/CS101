@@ -23,6 +23,8 @@ boolean result = a && b;
 - C) `"true"`
 - D) Compiler error
 
+> **Rationale:** `&&` (AND) requires both operands to be true. Since `b` is `false`, `a && b` is `false`.
+
 ---
 
 **2. (1pt) What is the value of `result`?**
@@ -34,6 +36,8 @@ boolean result = !isSunny;
 - *answer* **B) `false`**
 - C) `"notSunny"`
 - D) Compiler error
+
+> **Rationale:** `!` (NOT) flips the boolean. `!true` is `false`.
 
 ---
 
@@ -47,6 +51,8 @@ System.out.println(x > y);
 - *answer* **B) `false`**
 - C) `5`
 - D) Compiler error
+
+> **Rationale:** 5 is not greater than 10, so `x > y` evaluates to `false`.
 
 ---
 
@@ -66,6 +72,8 @@ if (temp > 50) {
 - *answer* **C) `freezing`**
 - D) `warm` and `cool`
 
+> **Rationale:** `32 > 50` is false. `32 > 32` is also false (not strictly greater). Neither branch runs, so the `else` block prints `"freezing"`.
+
 ---
 
 **5. (1pt) What does this code print?**
@@ -79,6 +87,8 @@ System.out.println(result);
 - B) `false`
 - C) `5`
 - D) Compiler error
+
+> **Rationale:** `(3 > 5)` is `false`, but `(5 != 3)` is `true`. `false || true` is `true`.
 
 ---
 
@@ -100,6 +110,8 @@ if (x > 12) {
 - C) "a b c "
 - D) "b "
 
+> **Rationale:** `10 > 5` is true (prints "a "), `10 < 15` is true (prints "b "), `10 > 12` is false (skipped). Each `if` is checked independently.
+
 ---
 
 
@@ -112,6 +124,8 @@ int result = 10 - 2 * 3 + 4;
 - C) 0
 - D) 6
 
+> **Rationale:** Multiplication first: `2 * 3 = 6`. Then left to right: `10 - 6 + 4 = 8`.
+
 ---
 
 **8. (1pt) What is the value of `result`?**
@@ -122,6 +136,8 @@ double result = 15.0 / 3 / 2;
 - *answer* **B) `2.5`**
 - C) `2`
 - D) `2.0`
+
+> **Rationale:** Division is left-to-right: `15.0 / 3 = 5.0`, then `5.0 / 2 = 2.5`.
 
 ---
 
@@ -134,6 +150,8 @@ boolean result = 4 * 2 == 8 || 3 + 1 > 10;
 - C) `8`
 - D) Compiler error
 
+> **Rationale:** `4 * 2 == 8` is `true`. Since `||` short-circuits when the left side is `true`, the result is `true` without needing to evaluate the right side.
+
 ---
 
 **10. (1pt) Define bytecode**:
@@ -143,5 +161,6 @@ boolean result = 4 * 2 == 8 || 3 + 1 > 10;
 - *answer* **C) Intermediate, platform-independent code that is not quite machine code and not quite source code**
 - D) A virtual machine that runs Java programs
 
----
+> **Rationale:** The Java compiler converts source code into bytecode (`.class` files) — an intermediate format the JVM can run on any platform. It is not native machine code, but it's not the original source code either.
 
+---

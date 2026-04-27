@@ -12,7 +12,7 @@ The final project is worth 20% of your overall grade. It is split into three sec
 
 ## 1. (10pts) [Project Proposal](https://github.com/icanhazcodeplz/CS101/blob/main/final_project/1-Project-Proposal.pdf) - Due In Class April 7
 
-## 2. (15pts) Prototype Demo - During Class May 7
+## 2. (15pts) Prototype Demo - During Class May 12
 
 Present your app on the big screen. Have at least part of it working and be ready to explain what's left to finish. 
 This is an opportunity to get feedback from your peers about how to update/improve your app.
@@ -25,7 +25,7 @@ This is an opportunity to get feedback from your peers about how to update/impro
 | **Explain what's left**   | 5 | Can describe remaining features to implement |
 | **Feedback for Others**   | 5 | Complete feedback forms for your peers       |
 
-If you are unable to demo on May 7th for whatever reason, you can demo on May 12th, but your maximum score will be 10 points instead of 15.
+If you are unable to demo on May 12th for whatever reason, you can demo on May 5th or May 7th, but let me know beforehand via email.
 
 
 ## 3. (75pts) Final Project - Due May 21 (No late submissions)

@@ -150,4 +150,6 @@ public static void main(String[] args) {
 - C) The data type a method sends back to the caller
 - D) A named, reusable block of code that performs a specific task
 
+> **Rationale:** An argument is the actual value you pass when calling a method — e.g., `"Alice"` in `greet("Alice")`. The parameter (defined in the method signature) receives that value. Argument = caller's side; parameter = method's side.
+
 ---
