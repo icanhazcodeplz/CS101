@@ -23,32 +23,15 @@ The goal of this project is to help you practice:
 
 ## Getting Started
 
-### 1 — Download the data
+### 1 — Get the data
 
-Go to the Spotify Charts page at
-[https://charts.spotify.com/charts/overview/global](https://charts.spotify.com/charts/overview/global).
+The CSV file is already included in the course repository. You'll find it in the same folder as this assignment:
 
-1. **Log in.** Click the **Log in** button in the top-right corner of the page.
-   If you already have a (free) Spotify account, sign in with it. If you don't,
-   click **Sign up** to create one — a free account is all you need, you do
-   **not** need a paid Premium subscription.
-2. **Accept any permission prompts.** The first time you log in to Spotify
-   Charts, Spotify may show a screen asking you to agree to share your account
-   info with the Charts site. Click **Agree** to continue.
-3. **Open the Weekly Top Songs chart.** From the charts homepage, find the
-   **Top Songs** section and click **Weekly** (not Daily). Make sure the
-   region is set to **Global** at the top of the page. You should now see a
-   numbered list of the top 200 songs for the current week.
-4. **Download the CSV.** Look for the small **download icon** (a downward
-   arrow) to the right of the chart's title. Click it to download the chart
-   as a `.csv` file. The file will be named something like
-   `regional-global-weekly-YYYY-MM-DD.csv`.
-5. **Place the file in your project folder.** Move the downloaded CSV into
-   the same folder as your Java files so your program can read it.
+```
+regional-global-weekly-2026-04-30.csv
+```
 
-> **Heads up:** If the download button is missing or greyed out, double-check
-> that you're logged in and that you've accepted the permission prompt. The
-> download only works for signed-in users.
+Make sure this file is in the **same folder** as your Java files so your program can read it. If you cloned the CS101 repo, it's already there.
 
 ### 2 — Download `CSVParser.java`
 
