@@ -50,6 +50,7 @@ Ask the user for an integer `n`. Then, print every number from `n` down to 1, sl
 ### 7. Password Strength Checker
 Prompt the user to enter a password. Inform them of the requirements listed below. Then, check all of the requirements.
 If the password is not valid, tell the user that the password is invalid, and prompt them to enter another one.
+
 - At least 8 characters long
 - Contains the `"#"` character
 
