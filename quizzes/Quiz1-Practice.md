@@ -33,7 +33,7 @@ home
 
 ---
 
-**2. (2pts) My working directory is `/home/cs101/lab1`. What command prints all files in the `lab1` folder?**
+**2. NOT ON FINAL EXAM - (2pts) My working directory is `/home/cs101/lab1`. What command prints all files in the `lab1` folder?**
 
 - A) `mkdir lab1`
 - B) `cd lab1`
@@ -42,7 +42,7 @@ home
 
 ---
 
-**3. (2pts) Which correctly identifies the command, options, and arguments in `$ eat -h -g --now carrots apples`?**
+**3. NOT ON FINAL EXAM - (2pts) Which correctly identifies the command, options, and arguments in `$ eat -h -g --now carrots apples`?**
 
 - A) Command: `eat`, Options: `carrots apples`, Arguments: `-h -g --now`
 - B) Command: `eat -h`, Options: `-g --now`, Arguments: `carrots apples`
