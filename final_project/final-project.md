@@ -21,9 +21,9 @@ This is an opportunity to get feedback from your peers about how to update/impro
 
 | Category                  | Points | Description                                  |
 |---------------------------|--------|----------------------------------------------|
-| **Partial functionality** | 5 | At least part of the app works               |
-| **Explain what's left**   | 5 | Can describe remaining features to implement |
-| **Feedback for Others**   | 5 | Complete feedback forms for your peers       |
+| **Partial functionality** | 5      | At least part of the app works               |
+| **Explain what's left**   | 2      | Can describe remaining features to implement |
+| **Feedback for Others**   | 8      | Complete feedback forms for your peers       |
 
 If you are unable to demo on May 12th for whatever reason, you can demo on May 5th or May 7th, but let me know beforehand via email.
 
