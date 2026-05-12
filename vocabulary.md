@@ -48,14 +48,10 @@
 
 ## Data Types & Type Conversion
 - **Java Primitive**: A basic built-in data type that stores a simple value directly in memory. The 8 primitives are: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, and `char`.
-- **Java Object**: A more complex data type that stores a reference to data in memory. Objects have methods and properties. Examples: `String`, `Scanner`, `ArrayList`.
 - **Type Casting**: Converting a value from one data type to another. e.g. `(double) 5` converts the int `5` to `5.0`.
 - **Widening**: In Java, automatically converting a smaller data type to a larger one with no data loss. e.g. `int` to `double`: `double d = 5;` results in `5.0`.
 - **Narrowing**: In Java, manually converting a larger data type to a smaller one, which may lose data. Requires explicit casting. e.g. `double` to `int`: `int x = (int) 9.99;` results in `9` (decimal truncated).
 - **Parsing**: Analyzing a string and converting it and/or splitting into usable components. e.g. the java compiler parsing `int x = 5` into `type -> int`, `name -> x`, and `value -> 5` , or `Integer.parseInt("123")` parsing the String `"123"` into the int `123`.
-
-## Classes and Objects
-- **Instantiate**: To create a new object from a class. e.g. `Scanner scanner = new Scanner(System.in);` instantiates a new `Scanner` object.
 
 ## Programming Concepts
 - **Pseudocode**: An informal, human-readable description of a program's logic that uses plain language and simple structure rather than actual programming syntax. Used to plan out algorithms before writing real code.
@@ -95,4 +91,10 @@
 - **Index**: The position of an element in an array, starting at 0. e.g. in `{10, 20, 30}`, index 0 is `10`, index 1 is `20`, index 2 is `30`.
 - **Element**: A single value stored at a specific index in an array. e.g. in `int[] nums = {10, 20, 30};`, `20` is the element at index 1.
 - **ArrayList**: A resizable collection of objects that can grow and shrink as elements are added or removed.
+
+
+## NOT ON FINAL: Classes and Objects
+- **Java Object**: A more complex data type that stores a reference to data in memory. Objects have methods and properties. Examples: `String`, `Scanner`, `ArrayList`.
+- **Instantiate**: To create a new object from a class. e.g. `Scanner scanner = new Scanner(System.in);` instantiates a new `Scanner` object.
+
 
