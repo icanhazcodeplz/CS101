@@ -14,11 +14,12 @@ Requirements:
 import sys
 import os
 import re
+import argparse
 import subprocess
 import markdown
 from pygments.formatters import HtmlFormatter
 
-def md_to_pdf(input_path, output_path=None):
+def md_to_pdf(input_path, output_path=None, linenums=False):
     if output_path is None:
         output_path = os.path.splitext(input_path)[0] + ".pdf"
 
@@ -37,6 +38,7 @@ def md_to_pdf(input_path, output_path=None):
             "codehilite": {
                 "guess_lang": False,
                 "css_class": "codehilite",
+                "linenums": linenums,
             }
         },
     )
@@ -79,6 +81,7 @@ def md_to_pdf(input_path, output_path=None):
         font-size: 12px;
         overflow-x: auto;
         margin-top: 0.2em;
+        max-width: 50%;
     }}
     .codehilite pre {{
         margin: 0;
@@ -105,6 +108,25 @@ def md_to_pdf(input_path, output_path=None):
         vertical-align: top;
         padding: 6px;
     }}
+    .codehilite table {{
+        width: auto;
+        margin: 0;
+        border: none;
+    }}
+    .codehilite td {{
+        padding: 0;
+        border: none;
+    }}
+    td.linenos pre {{
+        color: #aaa;
+        padding: 1px 8px 1px 4px;
+        border-right: 1px solid #ddd;
+        margin: 0;
+        font-size: 12px;
+    }}
+    td.code {{
+        padding-left: 8px;
+    }}
     {code_css}
 </style>
 </head>
@@ -123,10 +145,9 @@ def md_to_pdf(input_path, output_path=None):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python md_to_pdf.py <input.md> [output.pdf]")
-        sys.exit(1)
-
-    input_file = sys.argv[1]
-    output_file = sys.argv[2] if len(sys.argv) > 2 else None
-    md_to_pdf(input_file, output_file)
+    parser = argparse.ArgumentParser(description="Convert a Markdown file to a styled PDF.")
+    parser.add_argument("input", help="Input .md file")
+    parser.add_argument("output", nargs="?", default=None, help="Output .pdf file (default: same name as input)")
+    parser.add_argument("-l", action="store_true", help="Show line numbers in code blocks")
+    args = parser.parse_args()
+    md_to_pdf(args.input, args.output, linenums=args.l)

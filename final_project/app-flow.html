@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Flow Worksheet</title>
+<style>
+  @page {
+    size: letter landscape;
+    margin: 0.2in;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10in;
+    height: 7.5in;
+    margin: 0 auto;
+    padding: 0.2in;
+    color: #1a1a1a;
+  }
+
+  @media print {
+    body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+  }
+
+  .header {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    font-size: 13px;
+  }
+
+  .header h1 {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-right: 16px;
+  }
+
+  .header label {
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .header .fill-line {
+    flex: 1;
+    border-bottom: 1px solid #999;
+    margin-bottom: 2px;
+  }
+
+  /* --- Main layout --- */
+  .main {
+    display: flex;
+    height: 100%;
+    gap: 0;
+  }
+
+  /* --- Left: Home screen --- */
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    flex-shrink: 0;
+    gap: 6px;
+  }
+
+  .screen-label {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #555;
+  }
+
+  .screen-box {
+    width: 200px;
+    height: 340px;
+    border: 2.5px solid #1a1a1a;
+    border-radius: 4px;
+  }
+
+  /* --- Center: Arrows --- */
+  .arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 120px;
+    flex-shrink: 0;
+    padding: 20px 0;
+  }
+
+  .arrow-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 0 8px;
+  }
+
+  .arrow-action-label {
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #999;
+  }
+
+  .arrow-write-line {
+    width: 100%;
+    border-bottom: 1px solid #bbb;
+    height: 1px;
+  }
+
+  .arrow-line {
+    width: 100%;
+    height: 0;
+    border-top: 2px solid #1a1a1a;
+    position: relative;
+    margin-top: 4px;
+  }
+
+  .arrow-line::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: -6px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 9px solid #1a1a1a;
+  }
+
+  /* --- Right: After actions --- */
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    gap: 0;
+  }
+
+  .action-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 0;
+    flex: 1;
+  }
+
+  .action-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ccc;
+    flex-shrink: 0;
+  }
+
+  .action-screen {
+    flex-shrink: 0;
+  }
+
+  .action-screen .screen-box {
+    width: 200px;
+    height: 340px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0;
+  }
+
+  .action-description {
+    width: 80px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-self: stretch;
+  }
+
+  .action-description .desc-label {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #999;
+    white-space: nowrap;
+  }
+
+  .action-description .desc-lines {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .action-description .desc-lines .line {
+    border-bottom: 1px solid #ddd;
+    height: 1px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="main">
+
+    <div class="left">
+      <div class="screen-label"></div>
+      <div class="screen-box"></div>
+    </div>
+
+    <div class="arrows">
+      <div class="arrow-group">
+        <div class="arrow-action-label">User action</div>
+        <div class="arrow-line"></div>
+      </div>
+      <div class="arrow-group">
+        <div class="arrow-action-label">User action</div>
+        <div class="arrow-line"></div>
+      </div>
+    </div>
+
+    <div class="right">
+
+      <div class="action-row">
+
+        <div class="action-screen">
+          <div class="screen-label">After Action</div>
+          <div class="screen-box"></div>
+        </div>
+        <div class="action-description">
+          <div class="desc-label">What changed? Logic Required? Pseudocode?</div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="action-row">
+
+        <div class="action-screen">
+          <div class="screen-label">After Action</div>
+          <div class="screen-box"></div>
+        </div>
+        <div class="action-description">
+          <div class="desc-label">What changed? Logic Required? Pseudocode?</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
